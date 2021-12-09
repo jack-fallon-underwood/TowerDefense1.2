@@ -1,0 +1,68 @@
+{ "frames": {
+   "walking2 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 256, "h": 240 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 240 },
+    "sourceSize": { "w": 256, "h": 240 },
+    "duration": 100
+   },
+   "walking2 1.aseprite": {
+    "frame": { "x": 256, "y": 0, "w": 256, "h": 240 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 240 },
+    "sourceSize": { "w": 256, "h": 240 },
+    "duration": 100
+   },
+   "walking2 2.aseprite": {
+    "frame": { "x": 512, "y": 0, "w": 256, "h": 240 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 240 },
+    "sourceSize": { "w": 256, "h": 240 },
+    "duration": 100
+   },
+   "walking2 3.aseprite": {
+    "frame": { "x": 768, "y": 0, "w": 256, "h": 240 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 240 },
+    "sourceSize": { "w": 256, "h": 240 },
+    "duration": 100
+   },
+   "walking2 4.aseprite": {
+    "frame": { "x": 1024, "y": 0, "w": 256, "h": 240 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 240 },
+    "sourceSize": { "w": 256, "h": 240 },
+    "duration": 100
+   },
+   "walking2 5.aseprite": {
+    "frame": { "x": 1280, "y": 0, "w": 256, "h": 240 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 240 },
+    "sourceSize": { "w": 256, "h": 240 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.13",
+  "image": "Sprite-0001.png",
+  "format": "RGBA8888",
+  "size": { "w": 1536, "h": 240 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Feet", "opacity": 255, "blendMode": "normal" },
+   { "name": "Sholders", "opacity": 255, "blendMode": "normal" },
+   { "name": "Head", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

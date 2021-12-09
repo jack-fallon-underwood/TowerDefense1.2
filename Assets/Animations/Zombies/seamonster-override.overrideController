@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: seamonster-override
+  m_Controller: {fileID: 9100000, guid: 6ae511c382f588d4bbb5295bbf84ff30, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6b4751c02810d2d488a33c6cf961f58b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6d47ddf454560244290850873c8717cd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4e75e4e0c88558a49bbe822c2ab0a3f9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8c020b6bed9a01f4b8064580216d648e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 39f10a1c21a310a409a565e8fe92b9a1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f1029c9ae084b7b42a1d3284027e29e3, type: 2}

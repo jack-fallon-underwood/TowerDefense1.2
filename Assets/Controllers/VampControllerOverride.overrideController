@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VampControllerOverride
+  m_Controller: {fileID: 9100000, guid: d8512f1fb6089034f9042076b3b4b7ad, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 3124b94afe9f94220be67380c48c0e45, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1ccebdc929750c248a5d63e8c53cc58d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5e667f00d20e949fea35c9bd295756b0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6f86168557182314a8b8055670d41bd0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4172c89ebab8246b4994267570d7149a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1ccebdc929750c248a5d63e8c53cc58d, type: 2}
