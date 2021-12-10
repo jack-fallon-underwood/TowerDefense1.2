@@ -119,6 +119,8 @@ public class Player : Character
 
     [SerializeField] protected GameObject MyPlayerPanel;
     protected GameObject PlayerPanelDestination;
+    [SerializeField] protected GameObject mainCamera;
+    protected CameraFollow mainCam;
 
 
     protected override void Start()
@@ -142,6 +144,9 @@ public class Player : Character
         base.Start();
         PlayerPanelDestination = GameObject.Find("PlayerPanels");//.GetComponent<GameObject>();
         MyPlayerPanel.transform.parent = PlayerPanelDestination.transform;
+        mainCamera = GameObject.Find("Main Camera");
+        mainCam = mainCamera.GetComponent<CameraFollow>();
+        mainCam.Players.Add(this);
 
 
         
