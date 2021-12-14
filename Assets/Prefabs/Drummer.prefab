@@ -1,5 +1,70 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4229110559220600394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194233312264269404}
+  - component: {fileID: 4592052962566231138}
+  m_Layer: 3
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1194233312264269404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229110559220600394}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5099945, y: 0.020004272, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6899826125366437312}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &4592052962566231138
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229110559220600394}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.05609131, y: 0.66345215}
+      - {x: -0.95105654, y: 0.30901697}
+      - {x: -0.97410583, y: -0.10203552}
+      - {x: -0.3802185, y: -0.29986572}
+      - {x: -0.33537292, y: -0.72488403}
+      - {x: 0.21368408, y: -0.6127014}
+      - {x: 0.5316925, y: -0.220047}
+      - {x: 0.90930176, y: -0.018066406}
+      - {x: 0.9510565, y: 0.30901712}
 --- !u!1 &4588968939979017791
 GameObject:
   m_ObjectHideFlags: 0
@@ -8596,6 +8661,7 @@ Transform:
   - {fileID: 4588968942073087625}
   - {fileID: 4588968941256629576}
   - {fileID: 6903725940417551924}
+  - {fileID: 1194233312264269404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8693,7 +8759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94108c79df6f8746b32f46a072658f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  Frames: 0
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -8726,6 +8792,7 @@ MonoBehaviour:
   mySprite: {fileID: 4588968942073087626}
   myDrumExits: {fileID: 6902889643535508058}
   MyPlayerPanel: {fileID: 4588968941256629577}
+  mainCamera: {fileID: 0}
 --- !u!50 &6903228181417357807
 Rigidbody2D:
   serializedVersion: 4

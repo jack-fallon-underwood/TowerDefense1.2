@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour {
 
     public List<Player> Players = new List<Player>();
     private Vector3 average = Vector3.zero;
-    private Vector3 meanPlayerPosition = new Vector3(0, 0, -10);
+    private Vector3 meanPlayerPosition = new Vector3(0, 0, -20);
   
     private Vector3 tempMin = new Vector3(0, 0, -10);
     private Vector3 tempMax = new Vector3(0, 0, -10);
@@ -48,9 +48,14 @@ public class CameraFollow : MonoBehaviour {
             
         }
 
-        average.x = average.x / Players.Count;
-        average.y = average.y / Players.Count;
-        average.z = -20; //average.z/targets.Count;
+        if (Players.Count >= 1)
+        {
+            average.x = average.x / Players.Count;
+            average.y = average.y / Players.Count;
+            average.z = -20; //average.z/targets.Count;
+        }
+
+        
 
         //Debug.Log(Vector3.Cross(average,new Vector3 (0,1,0)).z);
 
@@ -60,6 +65,7 @@ public class CameraFollow : MonoBehaviour {
  
         switch (Players.Count)
         {
+            
             case 1:
                 tempMin = average;
                 tempMax = average;
@@ -82,15 +88,19 @@ public class CameraFollow : MonoBehaviour {
                 tempMax = (Vector3.Max(Players[0].transform.position, Players[1].transform.position));
                 tempMax = (Vector3.Max(tempMax, Players[2].transform.position));
                 tempMax = (Vector3.Max(tempMax, Players[3].transform.position));
+
+                defaullt:
+                tempMin = new Vector3(400, 300, 200);
+                tempMax = new Vector3(400, 300, 200);
                 break;
         }
 
 
         //Variables for the most extreme active players
         int cameraMargin = 5;
-        xMin = tempMin.x + cameraMargin;
+        xMin = tempMin.x - cameraMargin;
 
-        yMin = tempMin.y + cameraMargin;
+        yMin = tempMin.y - cameraMargin;
 
         xMax = tempMax.x + cameraMargin;
 
@@ -111,12 +121,12 @@ public class CameraFollow : MonoBehaviour {
         targetZoom = Mathf.Clamp(targetZoom, 7.08f, 20f);
 
         //Chaning the actual zoom size
-        Debug.Log(cam.orthographicSize + " " + targetZoom + " " + Time.deltaTime + " " + zoomLerpSpeed);
+        //Debug.Log(cam.orthographicSize + " " + targetZoom + " " + Time.deltaTime + " " + zoomLerpSpeed);
       
             cam.orthographicSize = 10;
        
 
-        cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, Time.deltaTime * zoomLerpSpeed);
+       // cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, Time.deltaTime * zoomLerpSpeed);
 
         //Makes sure the camera doesn't go further than our players
         //transform.position = new Vector3(Mathf.Clamp(target.position.x, xMin, xMax), Mathf.Clamp(target.position.y, yMin, yMax), -10);

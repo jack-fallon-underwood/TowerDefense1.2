@@ -12,7 +12,7 @@ public abstract class Character : MonoBehaviour
 {
     public int Frames = 0;
 
-    [SerializeField] private int maxHealth;
+    //[SerializeField] private int maxHealth;
     [SerializeField] private float physicalDmg;
     public float PhysicalDmg
     {
@@ -159,7 +159,7 @@ public abstract class Character : MonoBehaviour
         HandleLayers();
 	}
 
-    private void FixedUpdate()
+    protected private void FixedUpdate()
     {
         Move();
     }
