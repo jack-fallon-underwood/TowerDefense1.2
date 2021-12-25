@@ -19,7 +19,6 @@ public class Pianist : Player
     private Axe myBurst;
     private bool isStrumming;
 
-    protected string NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname;
 
     [SerializeField] protected ObjectPooler HealthShooter;
 

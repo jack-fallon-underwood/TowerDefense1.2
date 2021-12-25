@@ -43,7 +43,6 @@ public class Sender: Enemy
             
             StartCoroutine(Attack("whydoineedastring"));
 
-Debug.Log(MyAggroRange+" <" +Vector2.Distance(transform.position, MyTarget.position));
             if(MyAggroRange < Vector2.Distance(transform.position, MyTarget.position))
             {
                 Debug.Log(MyAggroRange+" <" +Vector2.Distance(transform.position, MyTarget.position));
@@ -73,7 +72,7 @@ Debug.Log(MyAggroRange+" <" +Vector2.Distance(transform.position, MyTarget.posit
           yield return new WaitForSeconds(2.25f); //This is a hardcoded cast time, for debugging
     //135 beats per minutes divided by 60 = 2.25 
         EvilProjectile q = p.GetComponent<EvilProjectile>();
-        Debug.Log(q);
+
         q.Initialize(q.MyDamage);
        // q.MyEvilBody.velocity = (MyTarget.position - p.transform.position );// * -1 * q.MySpeed;
         

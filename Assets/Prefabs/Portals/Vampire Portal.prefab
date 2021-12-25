@@ -121,9 +121,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.3721695}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 10
 --- !u!114 &4371923390623756537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 4371923391648358448}
   - component: {fileID: 4371923391648358449}
   - component: {fileID: 523792816794403514}
+  - component: {fileID: 6642359068476374336}
   m_Layer: 0
   m_Name: Vampire Portal
   m_TagString: Enemy
@@ -353,7 +354,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: bf1c6524204282c4daa15d482f18f041, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a30a21d16098a1f4a8810af125e339c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -374,7 +375,7 @@ Animator:
   m_GameObject: {fileID: 4371923391648358462}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7518e7b49a28a445ea8c12537c680079, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9c6229dda9ae5b046bc5ae9a12f155fe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -444,9 +445,23 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023677796, y: -0.021710932}
+  m_Offset: {x: 0.04593277, y: -0.25885773}
   serializedVersion: 2
-  m_Radius: 0.08355901
+  m_Radius: 0.6033516
+--- !u!114 &6642359068476374336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371923391648358462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a9cad904b974b1383a451c69a945ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ObjectPooler: {fileID: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &4371923391993366194
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +500,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 851, y: 479}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4371923391993366185
 Canvas:
@@ -598,15 +613,15 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4371923392146609859}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3496907, y: 0.10770857}
+  m_Offset: {x: -1.3496907, y: -0.23678064}
   serializedVersion: 2
-  m_Radius: 0.52215576
+  m_Radius: 0.8666434
 --- !u!1 &7695471805820547221
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +657,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 8, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7695471805820547222
 CanvasRenderer:

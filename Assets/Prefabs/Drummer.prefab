@@ -8763,7 +8763,7 @@ MonoBehaviour:
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
-  movementSpd: 5
+  movementSpd: 7
   hitBox: {fileID: 0}
   health: {fileID: 4588968941675157193}
   level: 1

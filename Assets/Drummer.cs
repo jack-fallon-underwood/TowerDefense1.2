@@ -13,9 +13,6 @@ using InControl;
 /// </summary>
 public class Drummer : Player
 {
-  
-
-    protected string NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname;
 
 
 

@@ -26,7 +26,11 @@ public class CharacterManager : MonoBehaviour
 	PlayerActions keyboardListener;
 	PlayerActions joystickListener;
 
+	void Awake()
+	{
+		DontDestroyOnLoad(this.gameObject);
 
+	}
 	void OnEnable()
 	{
 		InputManager.OnDeviceDetached += OnDeviceDetached;

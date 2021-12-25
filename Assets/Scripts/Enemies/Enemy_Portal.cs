@@ -52,9 +52,12 @@ public class Enemy_Portal : Enemy
 
         if(IsAlive ==false)
         {
-            mySpriteRenderer2D.color = Color.red;
+            myDumbAssFace.ReturnToPool();
+            health.MyCurrentValue = initHealth;
+            Reset();
+           /* mySpriteRenderer2D.color = Color.red;
             mySpace.enabled = false;
-            myRigidbody.Sleep();
+            myRigidbody.Sleep();*/
         }
 
         else
@@ -80,7 +83,7 @@ public class Enemy_Portal : Enemy
 
     public void Open()
     {
-        myAnimator.SetTrigger("Open");
+        //myAnimator.SetTrigger("Open");
     }
 
     public IEnumerator PoopEnemy()

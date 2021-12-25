@@ -16,10 +16,10 @@ public class CameraFollow : MonoBehaviour {
     private Vector3 tempMin = new Vector3(0, 0, -10);
     private Vector3 tempMax = new Vector3(0, 0, -10);
     private float meanX = 0, meanY = 0, p = 0;
-    private float targetZoom;
-    private float zoomFactor = 0.1f;
-    [SerializeField] private float zoomLerpSpeed = 3.0f;
-
+    [SerializeField] private float targetZoom;
+    [SerializeField] private float zoomFactor = 0.001f;
+    [SerializeField] private float zoomLerpSpeed = .030f;
+    [SerializeField] int cameraMargin;
     /// <summary>
     /// The minimum and maximum value of the camera
     /// </summary>
@@ -97,7 +97,7 @@ public class CameraFollow : MonoBehaviour {
 
 
         //Variables for the most extreme active players
-        int cameraMargin = 5;
+       
         xMin = tempMin.x - cameraMargin;
 
         yMin = tempMin.y - cameraMargin;
@@ -108,17 +108,17 @@ public class CameraFollow : MonoBehaviour {
 
 
         //Once players are more than VAR units away from eachother, scroll data turns positive 
-        int VAR = 5;
+        int VAR = 7;
         float scrollData;
         scrollData = ((Mathf.Max((Mathf.Abs(yMax - yMin)), (Mathf.Abs(xMax - xMin)))) - VAR);
-        scrollData = 1;
+        //scrollData = 1;
 
         //Zoom factor determined upstairs
         targetZoom = scrollData * Mathf.Abs(Vector3.Cross(average, new Vector3(0, 1, 0)).z);
-        // Debug.Log("tragetzoom"+targetZoom);
+  
 
         //MIN MAX zooms for the camera
-        targetZoom = Mathf.Clamp(targetZoom, 7.08f, 20f);
+        targetZoom = Mathf.Clamp(targetZoom, 10.8f, 11.2f);
 
         //Chaning the actual zoom size
         //Debug.Log(cam.orthographicSize + " " + targetZoom + " " + Time.deltaTime + " " + zoomLerpSpeed);
@@ -126,10 +126,9 @@ public class CameraFollow : MonoBehaviour {
             cam.orthographicSize = 10;
        
 
-       // cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, Time.deltaTime * zoomLerpSpeed);
+       cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, Time.deltaTime * zoomLerpSpeed);
 
-        //Makes sure the camera doesn't go further than our players
-        //transform.position = new Vector3(Mathf.Clamp(target.position.x, xMin, xMax), Mathf.Clamp(target.position.y, yMin, yMax), -10);
+      
 
     }        
 }

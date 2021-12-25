@@ -49,7 +49,7 @@ public class Enemy : Character
         }
     }
 
-    private PooledObject myDumbAssFace;
+    protected PooledObject myDumbAssFace;
     protected virtual void Awake()
     {   
         
@@ -87,7 +87,7 @@ public class Enemy : Character
 
             if(!(this is Enemy_Portal) & !(this is Sender))
             {
-            currentState.Update();
+             currentState.Update();
 
                 if (health.MyCurrentValue <= 0)
                 {

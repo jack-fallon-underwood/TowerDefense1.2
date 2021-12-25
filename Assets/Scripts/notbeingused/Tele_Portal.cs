@@ -19,17 +19,21 @@ public class Tele_Portal : MonoBehaviour
 
     void Touch()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
+      //  Debug.Log("touch");
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if (collision.tag == "Player")
-        {
-        SceneManager.LoadScene(2);
-        }
+
+      
+       if (collision.tag == "Player")
+       {
+
+            Debug.Log("nizzle");
+            SceneManager.LoadScene(1);
+       }
     }
 
 

@@ -156,7 +156,11 @@ public abstract class Character : MonoBehaviour
     /// </summary>
     protected virtual void Update ()
     {
-        HandleLayers();
+
+        {
+            HandleLayers();
+        }
+        
 	}
 
     protected private void FixedUpdate()
@@ -207,7 +211,9 @@ public abstract class Character : MonoBehaviour
             if (IsAttacking)
             {
             ActivateLayer("AttackLayer");
+            Debug.Log("YOINKS");
             }
+            
             else if (IsMoving)
             {
             ActivateLayer("WalkLayer");
@@ -244,7 +250,7 @@ public abstract class Character : MonoBehaviour
             
         }
 
-        MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex(layerName),1);
+       // MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex(layerName),1);
     }
 
     /// <summary>

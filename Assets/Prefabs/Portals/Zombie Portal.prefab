@@ -212,9 +212,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -3.2347374}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 19.05785
 --- !u!114 &2655995708058045713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,8 +311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 851, y: 479}
+  m_AnchoredPosition: {x: 0.0029, y: 1.0237}
+  m_SizeDelta: {x: 2.8613, y: 3.4369}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2655995708739877697
 Canvas:
@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 2655995709084491224}
   - component: {fileID: 2655995709084491225}
   - component: {fileID: 2248191103116525394}
+  - component: {fileID: 4086168114020162437}
   m_Layer: 0
   m_Name: Zombie Portal
   m_TagString: Enemy
@@ -513,7 +514,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: bf1c6524204282c4daa15d482f18f041, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73a8749e0e8d6fc4db2612a4f7f69eae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -534,7 +535,7 @@ Animator:
   m_GameObject: {fileID: 2655995709084491222}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7518e7b49a28a445ea8c12537c680079, type: 2}
+  m_Controller: {fileID: 9100000, guid: 624ef27928552b8419404c31cf70e57a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -604,9 +605,23 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023677796, y: -0.021710932}
+  m_Offset: {x: 0.10759258, y: 0.61963713}
   serializedVersion: 2
-  m_Radius: 0.08355901
+  m_Radius: 0.71291864
+--- !u!114 &4086168114020162437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2655995709084491222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a9cad904b974b1383a451c69a945ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ObjectPooler: {fileID: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &8267485191934003848
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +657,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 8, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8267485191934003851
 CanvasRenderer:

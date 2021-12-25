@@ -1321,10 +1321,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5040151996322814068}
   - component: {fileID: 4949111946701519086}
-  - component: {fileID: 2710153452953597549}
   - component: {fileID: 317943191025076087}
   - component: {fileID: 2710153453109176941}
-  - component: {fileID: 2710153453109176928}
   - component: {fileID: 4556747404227872847}
   m_Layer: 0
   m_Name: Bassist
@@ -1373,18 +1371,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2710153452953597549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5043501276340014172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb3adb76f3d5d4774b0a30d9eca7d6a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &317943191025076087
 Rigidbody2D:
   serializedVersion: 4
@@ -1418,7 +1404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b38513b7611e024c97b103b0de02eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  Frames: 0
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -1444,20 +1430,9 @@ MonoBehaviour:
   mySprite: {fileID: 1893500302848688467}
   myDrumExits: {fileID: 5042009900512255982}
   MyPlayerPanel: {fileID: 7181953092906382543}
+  mainCamera: {fileID: 0}
   axeHit: {fileID: 8973744374245851792}
   axeSwing: {fileID: 6371988349235131942}
---- !u!114 &2710153453109176928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5043501276340014172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb3adb76f3d5d4774b0a30d9eca7d6a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &4556747404227872847
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2475,9 +2450,9 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3443336535680493004}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7181953091601002510 stripped
+--- !u!114 &7181953093620348606 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5504062973841855938, guid: 3729676d843d842278650f2cd95d5468,
+  m_CorrespondingSourceObject: {fileID: 5504062972372063090, guid: 3729676d843d842278650f2cd95d5468,
     type: 3}
   m_PrefabInstance: {fileID: 3443336535680493004}
   m_PrefabAsset: {fileID: 0}
@@ -2499,9 +2474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8202103e2e66a9d44a39542415e30ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7181953093620348606 stripped
+--- !u!114 &7181953091601002510 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5504062972372063090, guid: 3729676d843d842278650f2cd95d5468,
+  m_CorrespondingSourceObject: {fileID: 5504062973841855938, guid: 3729676d843d842278650f2cd95d5468,
     type: 3}
   m_PrefabInstance: {fileID: 3443336535680493004}
   m_PrefabAsset: {fileID: 0}

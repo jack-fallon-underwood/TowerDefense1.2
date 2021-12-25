@@ -24,6 +24,7 @@ public class Player : Character
     private Vector2 InputVector;
 
 
+
     public int playerIndex;
     public string playerName;
 
@@ -124,7 +125,9 @@ public class Player : Character
 
 
     protected override void Start()
-    {                
+    {
+        DontDestroyOnLoad(this.gameObject);
+ 
         base.Start();
 
     }

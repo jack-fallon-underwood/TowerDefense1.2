@@ -17,7 +17,7 @@ public class Bassist : Player
     [SerializeField] private GameObject axeSwing;
     private Axe myHit;
     private Axe mySwing;
-    protected string NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname;
+
 
 
     protected override void Start()
