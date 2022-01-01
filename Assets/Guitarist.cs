@@ -113,7 +113,7 @@ public class Guitarist : Player
     {
 
 
-        if (mana1.MyCurrentValue > 0)
+        if (mana1.MyCurrentValue > 26)
         {
             StartCoroutine(Solo(projectileType));
         }
@@ -163,7 +163,7 @@ public class Guitarist : Player
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
-        mana1.MyCurrentValue -= 3;
+        mana1.MyCurrentValue -= 10;
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         GameObject p = GuitarShooter.GrabObject();
         axeLaunch.SetActive(true);
@@ -173,7 +173,7 @@ public class Guitarist : Player
 
         p.transform.position = exitPoints[0].position; //keeps it firing from the front
 
-        yield return new WaitForSeconds(0.01f); //This is a hardcoded cast time, for debugging     
+        yield return new WaitForSeconds(0.1f); //This is a hardcoded cast time, for debugging     
 
 
 

@@ -28,7 +28,7 @@ public class Enemy_Portal : Enemy
 
     protected override void Update()
     {
-        base.Update();
+        //base.Update();
     }
 
     // Update is called once per frame
@@ -36,9 +36,9 @@ public class Enemy_Portal : Enemy
     {   
 
         
-        base.FixedUpdate();
+       // base.FixedUpdate();
 
-        if(enemyManager.transform.childCount >= 1)
+        if(enemyManager.transform.childCount >= 6)
         {
             isOutOfEnemies = false;
 
@@ -94,9 +94,13 @@ public class Enemy_Portal : Enemy
         yield return new WaitForSeconds(1);
         GameObject p = eS.GrabObject();
         p.transform.position = this.transform.position;
+        //inn an attempt to reducce collision tags, most enemies will start with the target of their portals
+        Enemy q = p.GetComponent<Enemy>();
+        q.Target = this.Target;
+
         isSpawning = false;
         
-        Enemy q = p.GetComponent<Enemy>();
+
     }
 }
 

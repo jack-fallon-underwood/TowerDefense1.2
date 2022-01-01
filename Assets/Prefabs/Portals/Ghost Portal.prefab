@@ -464,8 +464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 1321748367517353452, guid: 91695759a6f74a34482ea82d14743e4e,
     type: 3}
-  startingAmount: 5
-  poolSize: 5
+  startingAmount: 10
+  poolSize: 10
 --- !u!1 &7844859564864136037
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4262fd29d3d541dc83dc9d4ba16ffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frames: 0
   physicalDmg: 0
   magicDmg: 0
   attackSpd: 0

@@ -12,7 +12,8 @@ using InControl;
 /// </summary>
 public class Player : Character
 {
-     public PlayerActions Actions { get; set; }
+    public int Frames = 0;
+    public PlayerActions Actions { get; set; }
    // public PlayerActions Actions { get; set; }
     // private CharacterController characterController;
 
@@ -126,6 +127,7 @@ public class Player : Character
 
     protected override void Start()
     {
+        gameObject.layer = 6;
         DontDestroyOnLoad(this.gameObject);
  
         base.Start();
@@ -228,9 +230,9 @@ public class Player : Character
     }
     protected void LateUpdate()
     {
- 
+        Frames++;
      if (Frames % 10 == 0) { //If the remainder of the current frame divided by 10 is 0 run the function.
-        mana1.MyCurrentValue += 1;
+        //mana1.MyCurrentValue += 1;
         moveDirection = transform.position;}
 
         

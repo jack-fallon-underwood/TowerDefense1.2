@@ -55,7 +55,7 @@ public class Enemy : Character
         
         MyStartPosition = transform.position;
         MyAggroRange = initAggroRange;
-        MyAttackRange = 3;
+        MyAttackRange = 2;
         healthGroup.alpha = 1;
         myDumbAssFace = GetComponent<PooledObject>();
         
@@ -72,6 +72,9 @@ public class Enemy : Character
     protected override void Update()
     {
         base.Update();
+  
+        HandleLayers();
+        
     }
 
     protected  void FixedUpdate()
@@ -85,20 +88,20 @@ public class Enemy : Character
                 MyAttackTime += Time.deltaTime;
             }
 
-            if(!(this is Enemy_Portal) & !(this is Sender))
+            if(!(this is Sender))
             {
              currentState.Update();
 
-                if (health.MyCurrentValue <= 0)
+              /*  if (health.MyCurrentValue <= 0)
                 {
                     myDumbAssFace.ReturnToPool();
                     health.MyCurrentValue = initHealth;
                     Reset();
-                }
+                }*/
             }       
         }
 
-        if (health.MyCurrentValue <= 0 && !(this is Enemy_Portal))
+        if (!(IsAlive))
         {
             myDumbAssFace.ReturnToPool();
             health.MyCurrentValue = initHealth;

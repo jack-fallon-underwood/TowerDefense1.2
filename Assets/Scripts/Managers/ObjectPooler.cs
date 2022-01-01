@@ -32,6 +32,9 @@ public class ObjectPooler : MonoBehaviour {
         availableObjects.Add(newObject);
         //set active false & parent to this
         newObject.transform.SetParent(transform);
+
+        //in an attempt to make pooping enemies faster this will set the transform on the pooled object prior to pooping them out
+        newObject.transform.position = this.transform.position;
         newObject.SetActive(false);
         //set poolsize
         poolSize = availableObjects.Count + objectsInUse.Count;

@@ -10,7 +10,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public abstract class Character : MonoBehaviour
 {
-    public int Frames = 0;
+   // public int Frames = 0;
 
     //[SerializeField] private int maxHealth;
     [SerializeField] private float physicalDmg;
@@ -113,7 +113,7 @@ public abstract class Character : MonoBehaviour
     {
         get
         {
-          return  health.MyCurrentValue > 0;
+          return  health.MyCurrentValue > 0.1f;
         }
     }
     private GameObject gameManager;
@@ -157,9 +157,7 @@ public abstract class Character : MonoBehaviour
     protected virtual void Update ()
     {
 
-        {
-            HandleLayers();
-        }
+        
         
 	}
 
@@ -170,7 +168,7 @@ public abstract class Character : MonoBehaviour
 
     protected void LateUpdate()
     {
-        Frames++;
+       // Frames++;
  
 
     }
@@ -211,7 +209,7 @@ public abstract class Character : MonoBehaviour
             if (IsAttacking)
             {
             ActivateLayer("AttackLayer");
-            Debug.Log("YOINKS");
+
             }
             
             else if (IsMoving)
@@ -250,7 +248,7 @@ public abstract class Character : MonoBehaviour
             
         }
 
-       // MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex(layerName),1);
+       MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex(layerName),1);
     }
 
     /// <summary>
