@@ -62,7 +62,6 @@ GameObject:
   - component: {fileID: 221656125061277459}
   - component: {fileID: 221656125061277458}
   - component: {fileID: 221656125061277457}
-  - component: {fileID: 221656125061277487}
   - component: {fileID: 4251720757346460598}
   m_Layer: 0
   m_Name: Guitarist
@@ -240,49 +239,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetposition: {x: 0, y: 0}
---- !u!114 &221656125061277487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221656125061277460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NotificationBehavior: 0
-  m_MaxPlayerCount: -1
-  m_AllowJoining: 1
-  m_JoinBehavior: 0
-  m_PlayerJoinedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_PlayerLeftEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_JoinAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: 
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-    m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 0}
-  m_SplitScreen: 0
-  m_MaintainAspectRatioInSplitScreen: 0
-  m_FixedNumberOfSplitScreens: -1
-  m_SplitScreenRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
 --- !u!114 &4251720757346460598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,11 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38a75b1aab87a4488a6a68f998ec3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
-  movementSpd: 5
+  movementSpd: 6
   hitBox: {fileID: 0}
   health: {fileID: 7165509130219733045}
   level: 1
@@ -307,6 +262,7 @@ MonoBehaviour:
   initHealth: 100
   MoveVector: {x: 0, y: 0, z: 0}
   MyGameManager: {fileID: 0}
+  Frames: 0
   playerIndex: 0
   playerName: 
   endurance: 25
@@ -321,6 +277,7 @@ MonoBehaviour:
   mySprite: {fileID: 7165509130627108982}
   myDrumExits: {fileID: 7824071443250909564}
   MyPlayerPanel: {fileID: 7165509129802288053}
+  mainCamera: {fileID: 0}
   axeSpinL: {fileID: 559528442535139133}
   axeSpinR: {fileID: 2890289492781661785}
   axeLaunch: {fileID: 4810431516283289857}
@@ -938,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 7
+  damage: 14
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &630610650239460445

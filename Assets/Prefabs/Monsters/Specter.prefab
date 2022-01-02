@@ -295,7 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f807a95e9ac3ffa48a7583df364b00b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frames: 0
   physicalDmg: 1
   magicDmg: 5
   attackSpd: 5
@@ -366,7 +365,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
+  m_Mass: 3
   m_LinearDrag: 0.1
   m_AngularDrag: 1
   m_GravityScale: 0

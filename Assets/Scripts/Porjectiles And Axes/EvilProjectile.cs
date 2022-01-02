@@ -79,10 +79,7 @@ public class EvilProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        p1 = GameObject.Find("Player1");
-        p2 = GameObject.Find("Player2");
-        p3 = GameObject.Find("Player3");
-        p4 = GameObject.Find("Player4");
+
         myAnimator = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         swimmyswimmy = GetComponent<PooledObject>();

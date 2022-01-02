@@ -14,10 +14,7 @@ public class Player : Character
 {
     public int Frames = 0;
     public PlayerActions Actions { get; set; }
-   // public PlayerActions Actions { get; set; }
-    // private CharacterController characterController;
 
-    //PlayerControls controls;
 
     /// <summary>
     /// The Player's InputVecor;
@@ -125,6 +122,9 @@ public class Player : Character
     protected CameraFollow mainCam;
 
 
+    private float dashTimer, dashDuration =1;
+
+
     protected override void Start()
     {
         gameObject.layer = 6;
@@ -160,6 +160,19 @@ public class Player : Character
        // controls.Gameplay.Attack.performed += ctx => Attack(NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname);
     }
 
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        dashTimer += Time.deltaTime;
+        if (dashTimer >= dashDuration)
+        {
+            if (Actions.Dash)
+            {
+                Dash();
+            }
+            dashTimer = 0;
+        }
+    }
     /// <summary>
     /// We are overriding the characters update function, so that we can execute our own functions
     /// </summary>
@@ -187,11 +200,8 @@ public class Player : Character
            
         base.Update();
 
-      
-        if (Actions.Dash)
-        { //Dash(); }
-        }
 
+      
 
 
         if (Actions.Walk.X != 0 || Actions.Walk.Y != 0)
@@ -231,13 +241,13 @@ public class Player : Character
     protected void LateUpdate()
     {
         Frames++;
-     if (Frames % 10 == 0) { //If the remainder of the current frame divided by 10 is 0 run the function.
+     if (Frames % 9 == 0) { //If the remainder of the current frame divided by 10 is 0 run the function.
         //mana1.MyCurrentValue += 1;
         moveDirection = transform.position;}
 
+
+
         
-
-
     }
 
     void OnDisable()
@@ -248,13 +258,25 @@ public class Player : Character
         }
     }
 
-
     void Dash()
     {
+     
+            StartCoroutine(DashCoroutine());
 
+        Debug.Log("ya" + dashTimer);
     }
 
- 
+    private IEnumerator DashCoroutine()
+    {
+        float startTime = Time.time; // need to remember this to know how long to dash
+        while (Time.time < startTime + 0.4f)
+        {
+            transform.Translate(moveDirection * 10 * Time.deltaTime);
+            // or controller.Move(...), dunno about that script
+            yield return null; // this will make Unity stop here and continue next frame
+        }
+
+    }
 
     void LChangeItem()
     {

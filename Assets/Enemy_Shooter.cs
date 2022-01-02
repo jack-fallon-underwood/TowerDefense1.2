@@ -20,6 +20,7 @@ public class Enemy_Shooter : Enemy
 
     private Vector3 min, max, moveDirection = Vector3.zero;
     private Vector2 currentRoration;
+    private bool IsReloading = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +36,15 @@ public class Enemy_Shooter : Enemy
     void Update()
     {
         base.Update();
+        
 
-        if (InRange == true && !IsAttacking)
+
+        if (InRange == true && !IsAttacking && !IsReloading)
         {
             StartCoroutine(Attack("ydoineedastring"));
         }
+
+       // StartCoroutine(Reload("morebullets"));
     }
 
     private IEnumerator Attack(string goname)
@@ -51,7 +56,8 @@ public class Enemy_Shooter : Enemy
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         GameObject p = GuitarShooter.GrabObject();
         p.transform.position = exitPoints[0].position; //keeps it firing from the front
-        yield return new WaitForSeconds(0.25f); //This is a hardcoded cast time, for debugging 
+        p.transform.SetParent(this.transform);
+        yield return new WaitForSeconds(3.00f); //This is a hardcoded cast time, for debugging 
         EvilProjectile q = p.GetComponent<EvilProjectile>();
         q.Initialize(q.MyDamage);
         Debug.Log(q.MyEvilBody);
@@ -60,5 +66,16 @@ public class Enemy_Shooter : Enemy
 
         IsAttacking = false;
 
+    }
+
+    private IEnumerator Reload(string goname)
+    {
+        IsReloading = true; //Indicates if we are attacking
+       
+        yield return new WaitForSeconds(3.00f); //This is a hardcoded cast time, for debugging 
+
+
+
+        IsReloading = false;
     }
 }

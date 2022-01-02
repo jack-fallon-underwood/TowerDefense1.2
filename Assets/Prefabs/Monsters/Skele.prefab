@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1418857845131134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4524462405729474}
   m_RootOrder: 1
@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.010879934, y: -0.010011844}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.03}
+  m_Size: {x: 0.62477386, y: 0.05002369}
   m_EdgeRadius: 0
 --- !u!1 &1633638862308656
 GameObject:
@@ -170,7 +170,7 @@ MonoBehaviour:
   health: {fileID: 114863229451470110}
   level: 5
   mySpriteRenderer2D: {fileID: 0}
-  initHealth: 5
+  initHealth: 10
   MoveVector: {x: 0, y: 0, z: 0}
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 225256324957732436}
@@ -620,7 +620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3319685531881192428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
   m_LocalScale: {x: 1.00025, y: 1.0007299, z: 1.0009902}
   m_Children: []
   m_Father: {fileID: 4524462405729474}
@@ -671,5 +671,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 1927637913554358, guid: e08169cb5a5c1cd44b7f0eba1dc195a1,
     type: 3}
-  startingAmount: 300
+  startingAmount: 12
   poolSize: 12

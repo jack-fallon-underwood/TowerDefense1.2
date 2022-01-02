@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 5
-  damage: 30
+  damage: 7
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!61 &6338178490767830609
