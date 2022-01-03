@@ -1404,7 +1404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b38513b7611e024c97b103b0de02eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frames: 0
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -1413,9 +1412,10 @@ MonoBehaviour:
   health: {fileID: 7181953093620348606}
   level: 1
   mySpriteRenderer2D: {fileID: 0}
-  initHealth: 100
+  initHealth: 200
   MoveVector: {x: 0, y: 0, z: 0}
   MyGameManager: {fileID: 0}
+  Frames: 0
   playerIndex: 0
   playerName: Ben
   endurance: 10

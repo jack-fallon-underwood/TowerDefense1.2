@@ -8461,7 +8461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab1c67aaeb92f448b8b7a66fc3351fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -8470,9 +8469,10 @@ MonoBehaviour:
   health: {fileID: 1036187466230152083}
   level: 1
   mySpriteRenderer2D: {fileID: 0}
-  initHealth: 30
+  initHealth: 150
   MoveVector: {x: 0, y: 0, z: 0}
   MyGameManager: {fileID: 0}
+  Frames: 0
   playerIndex: 0
   playerName: 
   endurance: 25
@@ -8494,6 +8494,7 @@ MonoBehaviour:
   mySprite: {fileID: 1036187466091211728}
   myDrumExits: {fileID: 7928007134794288896}
   MyPlayerPanel: {fileID: 1036187465811226643}
+  mainCamera: {fileID: 0}
   pianoHit: {fileID: 3942133406280590063}
   pianoBurst: {fileID: 2515878460547142617}
   HealthShooter: {fileID: 8928312166521317435}

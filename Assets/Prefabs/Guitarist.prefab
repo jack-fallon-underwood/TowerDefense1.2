@@ -259,13 +259,13 @@ MonoBehaviour:
   health: {fileID: 7165509130219733045}
   level: 1
   mySpriteRenderer2D: {fileID: 0}
-  initHealth: 100
+  initHealth: 125
   MoveVector: {x: 0, y: 0, z: 0}
   MyGameManager: {fileID: 0}
   Frames: 0
   playerIndex: 0
   playerName: 
-  endurance: 25
+  endurance: 39
   attackSpeed: 30
   mana1: {fileID: 7165509129866998798}
   exp1: {fileID: 7165509130403949945}
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b96d65491e9c1e9488f9c30646e4219a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSpeed: 0
+  currentSpeed: 19
   damage: 14
   castTime: 0
   PlayerOrigin: {fileID: 0}
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 7
+  damage: 25
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &3894392847958841401
