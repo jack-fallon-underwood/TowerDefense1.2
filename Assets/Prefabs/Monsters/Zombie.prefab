@@ -331,7 +331,7 @@ MonoBehaviour:
   physicalDmg: 1
   magicDmg: 5
   attackSpd: 5
-  movementSpd: 0.5
+  movementSpd: 2
   hitBox: {fileID: 9005471619085648115}
   health: {fileID: 9038439454966809323}
   level: 5

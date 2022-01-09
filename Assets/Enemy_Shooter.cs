@@ -60,7 +60,7 @@ public class Enemy_Shooter : Enemy
         yield return new WaitForSeconds(3.00f); //This is a hardcoded cast time, for debugging 
         EvilProjectile q = p.GetComponent<EvilProjectile>();
         q.Initialize(q.MyDamage);
-        Debug.Log(q.MyEvilBody);
+
         q.MyEvilBody.velocity = (MyTarget.position - q.transform.position);// * -1 * q.MySpeed;
 
 

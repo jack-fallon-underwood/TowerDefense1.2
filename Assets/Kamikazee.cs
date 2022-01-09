@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Kamikazee : Enemy
 {
+
+    [SerializeField] protected GameObject payLoad;
+    [SerializeField] protected float payLoadSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +24,15 @@ public class Kamikazee : Enemy
         base.Update();
 
      
+    }
+
+    public IEnumerator DropPayLoad()
+
+    {
+        payLoad.active = true;
+
+        yield return new WaitForSeconds(payLoadSpeed);
+        payLoad.active = false;
+        TakeDamage(500, MyTarget);
     }
 }

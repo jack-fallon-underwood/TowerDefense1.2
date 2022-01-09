@@ -373,7 +373,7 @@ MonoBehaviour:
   MoveVector: {x: 0, y: 0, z: 0}
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 8779404268063244240}
-  initAggroRange: 20
+  initAggroRange: 50
   sleepMode: 0
 --- !u!50 &8779404268405954901
 Rigidbody2D:

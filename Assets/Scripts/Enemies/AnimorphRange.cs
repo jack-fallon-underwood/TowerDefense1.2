@@ -31,7 +31,7 @@ public class AnimorphRange : MonoBehaviour
             parent.MovementSpd = newSpeed;
             parent.ActivateLayer("VampLayer");
             parent.MyAnimator.SetBool("vamping", IsVamping);
-            finalCollider.enabled = true;
+            this.finalCollider.enabled = true;
 
             // parent.ChangeState(new FollowState());
         }
