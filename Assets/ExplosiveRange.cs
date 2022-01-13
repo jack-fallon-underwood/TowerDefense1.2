@@ -26,7 +26,7 @@ public class ExplosiveRange : MonoBehaviour
         if (collision.tag == "Player")
         {
             parent.DropPayLoad();
-             
+           
         }
     }
 }

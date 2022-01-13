@@ -15,11 +15,11 @@ C:/Users/jacku/Documents/TowerDefense1.2
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54657
+54071
 Successfully changed project path to: C:/Users/jacku/Documents/TowerDefense1.2
 C:/Users/jacku/Documents/TowerDefense1.2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 162.60 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 189.44 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity Program/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity Program/2020.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity Program/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity Program/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity Program/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002595 seconds.
+Registered in 0.003663 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 140.75 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 138.09 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.808 seconds
+- Completed reload, in  2.025 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1808ms)
-		BeginReloadAssembly (70ms)
+	ReloadAssembly (2026ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (685ms)
-			LoadAssemblies (67ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (789ms)
+			LoadAssemblies (100ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (234ms)
+			SetupTypeCache (238ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (315ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (303ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (141ms)
-				BeforeProcessingInitializeOnLoad (19ms)
-				ProcessInitializeOnLoadAttributes (98ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				RefreshPlugins (138ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013365 seconds.
+Registered in 0.016355 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.85 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 114.84 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.357 seconds
+- Completed reload, in  7.272 seconds
 Domain Reload Profiling:
-	ReloadAssembly (7365ms)
-		BeginReloadAssembly (204ms)
+	ReloadAssembly (7278ms)
+		BeginReloadAssembly (201ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (7071ms)
-			LoadAssemblies (4468ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (6985ms)
+			LoadAssemblies (4140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1115ms)
+			SetupTypeCache (1337ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (1224ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (1235ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (116ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (906ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (115ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (913ms)
+				ProcessInitializeOnLoadMethodAttributes (82ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 1.44 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 1.49 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3239 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 122.1 MB.
-System memory in use after: 122.3 MB.
+Unloading 3241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 122.2 MB.
+System memory in use after: 122.4 MB.
 
-Unloading 129 unused Assets to reduce memory usage. Loaded Objects now: 3581.
-Total: 9.797900 ms (FindLiveObjects: 0.427800 ms CreateObjectMapping: 0.175900 ms MarkObjects: 9.040800 ms  DeleteObjects: 0.151200 ms)
+Unloading 129 unused Assets to reduce memory usage. Loaded Objects now: 3583.
+Total: 10.232600 ms (FindLiveObjects: 0.320800 ms CreateObjectMapping: 0.207400 ms MarkObjects: 9.549000 ms  DeleteObjects: 0.154000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,1652 +131,592 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/asSprites/shooter/Shooter3DownAttack.png
-  artifactKey: Guid(ad29e3b3947e2b74d9f8d36a6d07b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter3DownAttack.png using Guid(ad29e3b3947e2b74d9f8d36a6d07b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf201181810cecfe055c145bb101d4ec') in 0.207567 seconds 
-  Import took 0.216079 seconds .
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5ef124380a29eff9d87495d4a57365') in 0.253439 seconds 
+  Import took 0.260317 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/asSprites/shooter/Shooter5DownAttack.png
-  artifactKey: Guid(9bf402f3bceaec14ab1e0270d39d6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter5DownAttack.png using Guid(9bf402f3bceaec14ab1e0270d39d6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01da957fa5598c2687b191de1c819aa') in 0.020505 seconds 
-  Import took 0.026370 seconds .
+  Time since last request: 0.000453 seconds.
+  path: Assets/Prefabs/Portals/Ghost Portal.prefab
+  artifactKey: Guid(cfb03ceebef96cb47aa60a4974052988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Portals/Ghost Portal.prefab using Guid(cfb03ceebef96cb47aa60a4974052988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b684eae9f1a40453c77c9383e1adffc') in 0.057021 seconds 
+  Import took 0.063335 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/asSprites/shooter/Shooter27LeftAttack.png
-  artifactKey: Guid(860298f25599ec144a2023cce03d41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter27LeftAttack.png using Guid(860298f25599ec144a2023cce03d41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04b30a3febb324b3c1606c7e98d5ebc') in 0.018067 seconds 
-  Import took 0.024260 seconds .
+  Time since last request: 25.935157 seconds.
+  path: Assets/Prefabs/Portals/Ghost Portal.prefab
+  artifactKey: Guid(cfb03ceebef96cb47aa60a4974052988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Portals/Ghost Portal.prefab using Guid(cfb03ceebef96cb47aa60a4974052988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e550eeb177ebd796d333c7d10583bc02') in 0.021693 seconds 
+  Import took 0.029806 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Assets/asSprites/shooter
-  artifactKey: Guid(e735bc0d2c3a70e498a16be89df42887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter using Guid(e735bc0d2c3a70e498a16be89df42887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd31fc43ea431bba3b579effd9066c42') in 0.007735 seconds 
-  Import took 0.013084 seconds .
+  Time since last request: 25.001783 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6963d9053fabb4288ce52675169623c6') in 0.026417 seconds 
+  Import took 0.037143 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000514 seconds.
-  path: Assets/asSprites/shooter/Shooter1DownIdle.png
-  artifactKey: Guid(00d43d7c441ff184ebba188039846ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter1DownIdle.png using Guid(00d43d7c441ff184ebba188039846ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd90fcb95b985cfd4a3e2385b34e72a3') in 0.017833 seconds 
-  Import took 0.023470 seconds .
+  Time since last request: 33.421466 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca376b290bc901ca15f63725836a898') in 0.021644 seconds 
+  Import took 0.030738 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/asSprites/shooter/Shooter2DownIdle.png
-  artifactKey: Guid(3cd8f95489bf9524c9a52edd05daecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter2DownIdle.png using Guid(3cd8f95489bf9524c9a52edd05daecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24280cc384c5811e5a208c620dfdd5d4') in 0.018700 seconds 
-  Import took 0.024499 seconds .
+  Time since last request: 2.799394 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d69da3601cd789398f25f8fbc25cd77') in 0.018660 seconds 
+  Import took 0.027722 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/asSprites/shooter/ShooterHProjectile2.png
-  artifactKey: Guid(80f60c38e3ece4e43ae616c6fa19a18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/ShooterHProjectile2.png using Guid(80f60c38e3ece4e43ae616c6fa19a18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ec51e47a52a71b22c989aa25a72ed0') in 0.017233 seconds 
-  Import took 0.023061 seconds .
+  Time since last request: 2.945931 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a4a482c1b6019ecdf7cd749c8b2186') in 0.019401 seconds 
+  Import took 0.027704 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/asSprites/shooter/Shooter32LeftAttack.png
-  artifactKey: Guid(a00a1e4844d1acb4fbbc08e5c4566193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter32LeftAttack.png using Guid(a00a1e4844d1acb4fbbc08e5c4566193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd539a97e73163a55aa9bdb69424cfb5') in 0.016889 seconds 
-  Import took 0.023203 seconds .
+  Time since last request: 0.447538 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6747f23b8e064b6d3328d44899629f7a') in 0.020160 seconds 
+  Import took 0.027612 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/asSprites/shooter/Shooter16UpIdle.png
-  artifactKey: Guid(4be392b7afcdc5743a54af19bd296709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter16UpIdle.png using Guid(4be392b7afcdc5743a54af19bd296709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d1a75b1dae12c42b28a90b01e68fc2') in 0.017593 seconds 
-  Import took 0.024359 seconds .
+  Time since last request: 0.668762 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2d120ec5c2afd5c51d8ac38ecfd9b7') in 0.018062 seconds 
+  Import took 0.026387 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/asSprites/shooter/Shooter23UpAttack.png
-  artifactKey: Guid(60738992b0ac7b14d9a9954a8270504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter23UpAttack.png using Guid(60738992b0ac7b14d9a9954a8270504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4892f7ea9bd17f5b4ca1224a9958a14f') in 0.018710 seconds 
-  Import took 0.026577 seconds .
+  Time since last request: 1.101323 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59969b1a91dbdeae5862e1651130481') in 0.019818 seconds 
+  Import took 0.026685 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/asSprites/shooter/Shooter17UpIdle.png
-  artifactKey: Guid(f1cf3f1c19819a34ebc4b2b2be2894dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter17UpIdle.png using Guid(f1cf3f1c19819a34ebc4b2b2be2894dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92be8cf9052b214cdd583776a5cbe277') in 0.018702 seconds 
-  Import took 0.025519 seconds .
+  Time since last request: 5.893744 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f1bee96b8c5bceb6e46be72dc0a1b5') in 0.019800 seconds 
+  Import took 0.028291 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/asSprites/shooter/Shooter9LeftIdle.png
-  artifactKey: Guid(40c0d447d58e9f34ea756a8595c3739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter9LeftIdle.png using Guid(40c0d447d58e9f34ea756a8595c3739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3e5edf742952ee5a8b1e275181bb57') in 0.017304 seconds 
-  Import took 0.024050 seconds .
+  Time since last request: 4.117412 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b94c9bd5ef73b62d5db516f69e81c20') in 0.018666 seconds 
+  Import took 0.026864 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/asSprites/shooter/Shooter12LeftAttack.png
-  artifactKey: Guid(8b23f0c3ca1f3174cae0e0ef7c6ed9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter12LeftAttack.png using Guid(8b23f0c3ca1f3174cae0e0ef7c6ed9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca69fc3752f52b8a0218464bbd4e2cb') in 0.017744 seconds 
-  Import took 0.023240 seconds .
+  Time since last request: 3.156194 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5907b12232f3fc77b40cce694b6fb70d') in 0.019434 seconds 
+  Import took 0.026243 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/asSprites/shooter/Shooter10LeftIdle.png
-  artifactKey: Guid(52bc0f3f6ec21984caff0d0078e77a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter10LeftIdle.png using Guid(52bc0f3f6ec21984caff0d0078e77a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800c5203d1b7d165322e65be260ba1d0') in 0.017216 seconds 
-  Import took 0.022619 seconds .
+  Time since last request: 26.650837 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db43b62b48c21bb58f1d37e9dbe339c') in 0.019041 seconds 
+  Import took 0.026877 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/asSprites/shooter/Shooter13LeftAttack.png
-  artifactKey: Guid(05e2e3e1a69ad9c4b95bd82f597256ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter13LeftAttack.png using Guid(05e2e3e1a69ad9c4b95bd82f597256ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8551c64e06c35f7c766e78169f1e93a2') in 0.018684 seconds 
-  Import took 0.024115 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/asSprites/shooter/Shooter26LeftAttack.png
-  artifactKey: Guid(a64316c63b53e6e4ab752499a789b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter26LeftAttack.png using Guid(a64316c63b53e6e4ab752499a789b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1c26b8993d8ae7b98b7cb753e2d3c7') in 0.017223 seconds 
-  Import took 0.022665 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000398 seconds.
-  path: Assets/asSprites/shooter/Shooter15LeftAttack.png
-  artifactKey: Guid(ab7be4f770217c54b9ae6f4797a7ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter15LeftAttack.png using Guid(ab7be4f770217c54b9ae6f4797a7ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a2ab7d5b41c4fd480e64903bb3d6a9') in 0.018291 seconds 
-  Import took 0.024690 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/asSprites/shooter/Shooter4DownAttack.png
-  artifactKey: Guid(fffe26d1c5a5f6e4e967a940fea016eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter4DownAttack.png using Guid(fffe26d1c5a5f6e4e967a940fea016eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78458abf445e1786f8d1c7e3ca60a7e2') in 0.019113 seconds 
-  Import took 0.024998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/asSprites/shooter/Shooter6DownAttack.png
-  artifactKey: Guid(5721e4f9b1882074b83adb04dd1f3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter6DownAttack.png using Guid(5721e4f9b1882074b83adb04dd1f3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394cc8479757218e8c2da35d6f5993a4') in 0.017743 seconds 
-  Import took 0.023456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/asSprites/shooter/Shooter11LeftAttack.png
-  artifactKey: Guid(863f53b83768b8945b54b4cf9efa729f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter11LeftAttack.png using Guid(863f53b83768b8945b54b4cf9efa729f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725a5d76b0cdb8b402107f88b4f143f8') in 0.017946 seconds 
-  Import took 0.023423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/asSprites/shooter/Shooter22UpAttack.png
-  artifactKey: Guid(bf4a24d5b468faf44bbfbc2ab6b64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter22UpAttack.png using Guid(bf4a24d5b468faf44bbfbc2ab6b64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8657a04d74efd18c5da477d0def0e0ef') in 0.017046 seconds 
-  Import took 0.024752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/asSprites/shooter/Shooter14LeftAttack.png
-  artifactKey: Guid(0194c32d31c815c48af1a62a9a02d0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter14LeftAttack.png using Guid(0194c32d31c815c48af1a62a9a02d0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b404b49226d3df80c5a8ee3bc2febf') in 0.027801 seconds 
-  Import took 0.037851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/asSprites/shooter/Shooter21UpAttack.png
-  artifactKey: Guid(9183e8d050b7fce4ea9968eee85bcf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter21UpAttack.png using Guid(9183e8d050b7fce4ea9968eee85bcf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.021577 seconds  code(4) message(Build asset version error: assets/assprites/shooter/shooter21upattack.png.meta in SourceAssetDB has modification time of '2022-01-08T21:13:57.6266259Z' while content on disk has modification time of '2022-01-08T21:14:49.4513414Z')
-  ERROR: Build asset version error: assets/assprites/shooter/shooter21upattack.png.meta in SourceAssetDB has modification time of '2022-01-08T21:13:57.6266259Z' while content on disk has modification time of '2022-01-08T21:14:49.4513414Z'
-  Import took 0.030969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/asSprites/shooter/Shooter30LeftAttack.png
-  artifactKey: Guid(41ce2cc26ccbd4d4e86d9d1cbf7bbe75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter30LeftAttack.png using Guid(41ce2cc26ccbd4d4e86d9d1cbf7bbe75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.030104 seconds  code(4) message(Build asset version error: assets/assprites/shooter/shooter30leftattack.png.meta in SourceAssetDB has modification time of '2022-01-08T21:13:57.5864683Z' while content on disk has modification time of '2022-01-08T21:14:49.4626853Z')
-  ERROR: Build asset version error: assets/assprites/shooter/shooter30leftattack.png.meta in SourceAssetDB has modification time of '2022-01-08T21:13:57.5864683Z' while content on disk has modification time of '2022-01-08T21:14:49.4626853Z'
-  Import took 0.037686 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/asSprites/shooter/Shooter24LeftIdle.png
-  artifactKey: Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter24LeftIdle.png using Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
-0x00007ff71b975d82 (Unity) ImporterAssetResolver::ResolveAsset
-0x00007ff71b9413a2 (Unity) ResolveArtifactV2
-0x00007ff71b960d60 (Unity) ImportToObjects
-0x00007ff71b960168 (Unity) ImportAsset
-0x00007ff71b8c1f68 (Unity) AssetImportWorker::Import
-0x00007ff71b9152fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
-0x00007ff71b9b95f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
-0x00007ff71b9bb750 (Unity) asio::detail::win_iocp_io_service::do_one
-0x00007ff71b9beede (Unity) asio::io_service::run
-0x00007ff71b9420bb (Unity) RunAssetImportWorkerClientV2
-0x00007ff71b942110 (Unity) RunAssetImporterV2
-0x00007ff71ae055b6 (Unity) Application::InitializeProject
-0x00007ff71b7b1342 (Unity) WinMain
-0x00007ff71d6069b6 (Unity) __scrt_common_main_seh
-0x00007fff86587034 (KERNEL32) BaseThreadInitThunk
-0x00007fff878c2651 (ntdll) RtlUserThreadStart
-
-Requesting import of Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(-1,00000000000000000000000000000000), Assets/asSprites/shooter/Shooter24LeftIdle.png from editor
-Resuming Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 (aborted)
-Diagnostics callstack to track who triggered the sub-import:
-0x00007ff71b975d82 (Unity) ImporterAssetResolver::ResolveAsset
-0x00007ff71b9413a2 (Unity) ResolveArtifactV2
-0x00007ff71b938161 (Unity) ProduceArtifactV2
-0x00007ff71b886f2e (Unity) AssetDatabase::ProduceArtifact
-0x00007ff71b86c258 (Unity) PreviewImporter::GenerateAssetData
-0x00007ff71b961129 (Unity) ImportToObjects
-0x00007ff71b960168 (Unity) ImportAsset
-0x00007ff71b8c1f68 (Unity) AssetImportWorker::Import
-0x00007ff71b9152fa (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
-0x00007ff71b9b95f2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
-0x00007ff71b9bb750 (Unity) asio::detail::win_iocp_io_service::do_one
-0x00007ff71b9beede (Unity) asio::io_service::run
-0x00007ff71b9420bb (Unity) RunAssetImportWorkerClientV2
-0x00007ff71b942110 (Unity) RunAssetImporterV2
-0x00007ff71ae055b6 (Unity) Application::InitializeProject
-0x00007ff71b7b1342 (Unity) WinMain
-0x00007ff71d6069b6 (Unity) __scrt_common_main_seh
-0x00007fff86587034 (KERNEL32) BaseThreadInitThunk
-0x00007fff878c2651 (ntdll) RtlUserThreadStart
-
-Sub-import of Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(-1,00000000000000000000000000000000), Assets/asSprites/shooter/Shooter24LeftIdle.png skipped because a previous one failed already
- -> (artifact id: '2503ef494d98fa27896584f569b6d5f4') in 2.223656 seconds 
-  Import took 2.232185 seconds (was aborted).
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000416 seconds.
-  path: Assets/asSprites/shooter/Shooter3DownAttack.png
-  artifactKey: Guid(ad29e3b3947e2b74d9f8d36a6d07b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter3DownAttack.png using Guid(ad29e3b3947e2b74d9f8d36a6d07b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85cfadccb1fc0908c4807aaab7babf2') in 0.020580 seconds 
-  Import took 0.027880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000433 seconds.
-  path: Assets/asSprites/shooter/Shooter5DownAttack.png
-  artifactKey: Guid(9bf402f3bceaec14ab1e0270d39d6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter5DownAttack.png using Guid(9bf402f3bceaec14ab1e0270d39d6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408351e7f52e7bfaec8beb7abef719c6') in 0.022768 seconds 
-  Import took 0.033136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000421 seconds.
-  path: Assets/asSprites/shooter/Shooter27LeftAttack.png
-  artifactKey: Guid(860298f25599ec144a2023cce03d41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter27LeftAttack.png using Guid(860298f25599ec144a2023cce03d41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115f58328c1593c83dbb274d971c4c26') in 0.018763 seconds 
-  Import took 0.027279 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/asSprites/shooter/Shooter1DownIdle.png
-  artifactKey: Guid(00d43d7c441ff184ebba188039846ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter1DownIdle.png using Guid(00d43d7c441ff184ebba188039846ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0eb5b88ab4d2827e38eb3e31d35ca8') in 0.022673 seconds 
-  Import took 0.033794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/asSprites/shooter/Shooter2DownIdle.png
-  artifactKey: Guid(3cd8f95489bf9524c9a52edd05daecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter2DownIdle.png using Guid(3cd8f95489bf9524c9a52edd05daecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b26cb71d94b0b4784ad9be3cbcab31') in 0.022507 seconds 
-  Import took 0.033018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/asSprites/shooter/ShooterHProjectile2.png
-  artifactKey: Guid(80f60c38e3ece4e43ae616c6fa19a18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/ShooterHProjectile2.png using Guid(80f60c38e3ece4e43ae616c6fa19a18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b3c35635ba2fc73ce6aa569eb2b2b4') in 0.019350 seconds 
-  Import took 0.029587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/asSprites/shooter/Shooter32LeftAttack.png
-  artifactKey: Guid(a00a1e4844d1acb4fbbc08e5c4566193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter32LeftAttack.png using Guid(a00a1e4844d1acb4fbbc08e5c4566193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a660c7bec53191c708dd51c51b1529') in 0.030652 seconds 
-  Import took 0.042632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/asSprites/shooter/Shooter16UpIdle.png
-  artifactKey: Guid(4be392b7afcdc5743a54af19bd296709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter16UpIdle.png using Guid(4be392b7afcdc5743a54af19bd296709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41dc99e3de51608451ffdcab653e2441') in 0.019919 seconds 
-  Import took 0.028676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/asSprites/shooter/Shooter23UpAttack.png
-  artifactKey: Guid(60738992b0ac7b14d9a9954a8270504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter23UpAttack.png using Guid(60738992b0ac7b14d9a9954a8270504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b4f0010ef061d86bc43e201d5da03b') in 0.017903 seconds 
-  Import took 0.027084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000545 seconds.
-  path: Assets/asSprites/shooter/Shooter17UpIdle.png
-  artifactKey: Guid(f1cf3f1c19819a34ebc4b2b2be2894dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter17UpIdle.png using Guid(f1cf3f1c19819a34ebc4b2b2be2894dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55746f69b08010a6621080001ec3a4fc') in 0.020928 seconds 
-  Import took 0.028396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/asSprites/shooter/Shooter9LeftIdle.png
-  artifactKey: Guid(40c0d447d58e9f34ea756a8595c3739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter9LeftIdle.png using Guid(40c0d447d58e9f34ea756a8595c3739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c313a6cb59c3966eeabce45d05c8723') in 0.019821 seconds 
-  Import took 0.029540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/asSprites/shooter/Shooter12LeftAttack.png
-  artifactKey: Guid(8b23f0c3ca1f3174cae0e0ef7c6ed9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter12LeftAttack.png using Guid(8b23f0c3ca1f3174cae0e0ef7c6ed9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e110871981fa2b95d07299abd93aa8') in 0.024585 seconds 
-  Import took 0.036550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/asSprites/shooter/Shooter10LeftIdle.png
-  artifactKey: Guid(52bc0f3f6ec21984caff0d0078e77a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter10LeftIdle.png using Guid(52bc0f3f6ec21984caff0d0078e77a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66af00c10215d680befa57cf97e8a4b') in 0.025729 seconds 
-  Import took 0.035917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/asSprites/shooter/Shooter13LeftAttack.png
-  artifactKey: Guid(05e2e3e1a69ad9c4b95bd82f597256ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter13LeftAttack.png using Guid(05e2e3e1a69ad9c4b95bd82f597256ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2c4e0d3af6c4ef55fb055dd6ce290a') in 0.028531 seconds 
-  Import took 0.039499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/asSprites/shooter/Shooter26LeftAttack.png
-  artifactKey: Guid(a64316c63b53e6e4ab752499a789b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter26LeftAttack.png using Guid(a64316c63b53e6e4ab752499a789b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc684e2ef3304926c0bdb3292499a97d') in 0.021333 seconds 
-  Import took 0.030229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/asSprites/shooter/Shooter15LeftAttack.png
-  artifactKey: Guid(ab7be4f770217c54b9ae6f4797a7ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter15LeftAttack.png using Guid(ab7be4f770217c54b9ae6f4797a7ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4979ab59af3f1a8f80381bd277fbadfd') in 0.019829 seconds 
-  Import took 0.030993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/asSprites/shooter/Shooter4DownAttack.png
-  artifactKey: Guid(fffe26d1c5a5f6e4e967a940fea016eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter4DownAttack.png using Guid(fffe26d1c5a5f6e4e967a940fea016eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b66ebf6bc872ea0fc1385687075d3d') in 0.022162 seconds 
-  Import took 0.030605 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/asSprites/shooter/Shooter6DownAttack.png
-  artifactKey: Guid(5721e4f9b1882074b83adb04dd1f3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter6DownAttack.png using Guid(5721e4f9b1882074b83adb04dd1f3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea11ac2e6b64c48db6d713333960f7b0') in 0.021925 seconds 
-  Import took 0.030360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/asSprites/shooter/Shooter11LeftAttack.png
-  artifactKey: Guid(863f53b83768b8945b54b4cf9efa729f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter11LeftAttack.png using Guid(863f53b83768b8945b54b4cf9efa729f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7685f2dd14a91fcb9d60d87df1ffa374') in 0.025227 seconds 
-  Import took 0.034256 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/asSprites/shooter/Shooter22UpAttack.png
-  artifactKey: Guid(bf4a24d5b468faf44bbfbc2ab6b64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter22UpAttack.png using Guid(bf4a24d5b468faf44bbfbc2ab6b64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb64b80ff79977dc6a438c8cc59c0b0') in 0.021951 seconds 
-  Import took 0.030160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/asSprites/shooter/Shooter14LeftAttack.png
-  artifactKey: Guid(0194c32d31c815c48af1a62a9a02d0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter14LeftAttack.png using Guid(0194c32d31c815c48af1a62a9a02d0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '076ff374f1488ee1af2399511d7cab85') in 0.017880 seconds 
-  Import took 0.024784 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/asSprites/shooter/Shooter21UpAttack.png
-  artifactKey: Guid(9183e8d050b7fce4ea9968eee85bcf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter21UpAttack.png using Guid(9183e8d050b7fce4ea9968eee85bcf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c649bea5b9a561412ba857dd741b4cd0') in 0.024701 seconds 
-  Import took 0.032250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/asSprites/shooter/Shooter30LeftAttack.png
-  artifactKey: Guid(41ce2cc26ccbd4d4e86d9d1cbf7bbe75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter30LeftAttack.png using Guid(41ce2cc26ccbd4d4e86d9d1cbf7bbe75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1973d80d01f51129657aa543fd9245f') in 0.021419 seconds 
-  Import took 0.028437 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/asSprites/shooter/Shooter24LeftIdle.png
-  artifactKey: Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter24LeftIdle.png using Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fe9ae936d6e86d5fc024c7d46822fe3') in 0.021064 seconds 
-  Import took 0.027408 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/asSprites/shooter/ShooterVProjectile1.png
-  artifactKey: Guid(175831b20e9e1ee47938a134bacf0117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/ShooterVProjectile1.png using Guid(175831b20e9e1ee47938a134bacf0117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266811a26474a535a6442137fb38b1a3') in 0.029859 seconds 
-  Import took 0.036272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/asSprites/shooter/Shooter8DownAttack.png
-  artifactKey: Guid(ec63e2bc1f70da04295062e44c603bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter8DownAttack.png using Guid(ec63e2bc1f70da04295062e44c603bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5eac63a06a1eb7cb2e956080f6c79ae') in 0.023273 seconds 
-  Import took 0.030578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/asSprites/shooter/Shooter25LeftIdle.png
-  artifactKey: Guid(012f63b83c9eab74981076988cddff24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter25LeftIdle.png using Guid(012f63b83c9eab74981076988cddff24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90cc0a8160c33479f6c6ff25384bd6c') in 0.023106 seconds 
-  Import took 0.030852 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/asSprites/shooter/Shooter19UpAttack.png
-  artifactKey: Guid(180b46f9d6876ec449dcc58f08a30e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter19UpAttack.png using Guid(180b46f9d6876ec449dcc58f08a30e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75cc6584ee17deb65e3e4ca061df8e7') in 0.022055 seconds 
-  Import took 0.030223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/asSprites/shooter/Shooter7DownAttack.png
-  artifactKey: Guid(acd85629679ea90408d5600cc9dc54a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter7DownAttack.png using Guid(acd85629679ea90408d5600cc9dc54a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b80195588125e686010cad80b6b87dd') in 0.020175 seconds 
-  Import took 0.028568 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/asSprites/shooter/Shooter16.1LeftAttack.png
-  artifactKey: Guid(fe7c0dacc14b4bc4b97484cf9195a304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter16.1LeftAttack.png using Guid(fe7c0dacc14b4bc4b97484cf9195a304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f332bf65c0a8d9134c0479e2d763b3') in 0.023026 seconds 
-  Import took 0.029691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/asSprites/shooter/Shooter20UpAttack.png
-  artifactKey: Guid(d37fd1b9fcc9ebb4083583e62076b8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter20UpAttack.png using Guid(d37fd1b9fcc9ebb4083583e62076b8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ead8fa4f165e491abbcd98cfd278e4') in 0.020360 seconds 
-  Import took 0.028167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/asSprites/shooter/Shooter18UpAttack.png
-  artifactKey: Guid(f51cf5bcd93842547ba3c678dc0c820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter18UpAttack.png using Guid(f51cf5bcd93842547ba3c678dc0c820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63eb762f237603dd17029f711c8e5a08') in 0.026646 seconds 
-  Import took 0.033211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/asSprites/shooter/Shooter29LeftAttack.png
-  artifactKey: Guid(c9d021cd8a374b04c9e37f04198c2c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter29LeftAttack.png using Guid(c9d021cd8a374b04c9e37f04198c2c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282ed8d36c5e7dcb33c6134cf50e788f') in 0.026081 seconds 
-  Import took 0.032733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/asSprites/shooter/Shooter28LeftAttack.png
-  artifactKey: Guid(d0521e7e4a2f52b45a5bf8101fe08fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter28LeftAttack.png using Guid(d0521e7e4a2f52b45a5bf8101fe08fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a5e397ecba35d4f2d75b0875339430') in 0.022252 seconds 
-  Import took 0.029836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 92.809243 seconds.
-  path: Assets/asSprites/shooter/Shooter1DownIdle.png
-  artifactKey: Guid(00d43d7c441ff184ebba188039846ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter1DownIdle.png using Guid(00d43d7c441ff184ebba188039846ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98816ce0c895946a2c05c3238af8cc5e') in 0.023892 seconds 
-  Import took 0.031443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/asSprites/shooter/Shooter3DownAttack.png
-  artifactKey: Guid(ad29e3b3947e2b74d9f8d36a6d07b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter3DownAttack.png using Guid(ad29e3b3947e2b74d9f8d36a6d07b589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d01ead7159138fa824dd8cdbb10c6f4') in 0.020712 seconds 
-  Import took 0.028049 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000465 seconds.
-  path: Assets/asSprites/shooter/Shooter5DownAttack.png
-  artifactKey: Guid(9bf402f3bceaec14ab1e0270d39d6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter5DownAttack.png using Guid(9bf402f3bceaec14ab1e0270d39d6b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5b2613e77c57a3f5738ffcd3b1a0a7') in 0.020279 seconds 
-  Import took 0.028416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/asSprites/shooter/Shooter27LeftAttack.png
-  artifactKey: Guid(860298f25599ec144a2023cce03d41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter27LeftAttack.png using Guid(860298f25599ec144a2023cce03d41e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1c0ee1fa7a908eb7521d8b3099520e') in 0.020927 seconds 
-  Import took 0.028465 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000423 seconds.
-  path: Assets/asSprites/shooter/Shooter2DownIdle.png
-  artifactKey: Guid(3cd8f95489bf9524c9a52edd05daecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter2DownIdle.png using Guid(3cd8f95489bf9524c9a52edd05daecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da457c56e6267d0429d381120b9c4514') in 0.020651 seconds 
-  Import took 0.027789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000425 seconds.
-  path: Assets/asSprites/shooter/ShooterHProjectile2.png
-  artifactKey: Guid(80f60c38e3ece4e43ae616c6fa19a18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/ShooterHProjectile2.png using Guid(80f60c38e3ece4e43ae616c6fa19a18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c06426539db86c3652d33c9a0834ea3') in 0.015520 seconds 
-  Import took 0.025565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/asSprites/shooter/Shooter32LeftAttack.png
-  artifactKey: Guid(a00a1e4844d1acb4fbbc08e5c4566193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter32LeftAttack.png using Guid(a00a1e4844d1acb4fbbc08e5c4566193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae752a51e81a0fb0b42bd166f8de0613') in 0.023286 seconds 
-  Import took 0.030658 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/asSprites/shooter/Shooter16UpIdle.png
-  artifactKey: Guid(4be392b7afcdc5743a54af19bd296709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter16UpIdle.png using Guid(4be392b7afcdc5743a54af19bd296709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a7f1b0d4373a028161825fb2949908') in 0.019542 seconds 
-  Import took 0.027529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/asSprites/shooter/Shooter23UpAttack.png
-  artifactKey: Guid(60738992b0ac7b14d9a9954a8270504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter23UpAttack.png using Guid(60738992b0ac7b14d9a9954a8270504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82842fb03f7afdc4d6e8f2ad6e26fc79') in 0.020454 seconds 
-  Import took 0.028347 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/asSprites/shooter/Shooter17UpIdle.png
-  artifactKey: Guid(f1cf3f1c19819a34ebc4b2b2be2894dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter17UpIdle.png using Guid(f1cf3f1c19819a34ebc4b2b2be2894dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46cb0f3aba857e7f8524b0a8a7c1bb3') in 0.016690 seconds 
-  Import took 0.025413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000780 seconds.
-  path: Assets/asSprites/shooter/Shooter9LeftIdle.png
-  artifactKey: Guid(40c0d447d58e9f34ea756a8595c3739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter9LeftIdle.png using Guid(40c0d447d58e9f34ea756a8595c3739a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755e9846db2bf75a1053eee8e5d90ffd') in 0.021419 seconds 
-  Import took 0.029926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/asSprites/shooter/Shooter12LeftAttack.png
-  artifactKey: Guid(8b23f0c3ca1f3174cae0e0ef7c6ed9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter12LeftAttack.png using Guid(8b23f0c3ca1f3174cae0e0ef7c6ed9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50ef96c0b5f5573788afbf517083f27') in 0.024647 seconds 
-  Import took 0.032128 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/asSprites/shooter/Shooter10LeftIdle.png
-  artifactKey: Guid(52bc0f3f6ec21984caff0d0078e77a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter10LeftIdle.png using Guid(52bc0f3f6ec21984caff0d0078e77a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca58cdb05aed9d5c7ee77bd7457d91db') in 0.022590 seconds 
-  Import took 0.031847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/asSprites/shooter/Shooter13LeftAttack.png
-  artifactKey: Guid(05e2e3e1a69ad9c4b95bd82f597256ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter13LeftAttack.png using Guid(05e2e3e1a69ad9c4b95bd82f597256ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12bfea8b765d40a85a722595d8f18967') in 0.023251 seconds 
-  Import took 0.029222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/asSprites/shooter/Shooter26LeftAttack.png
-  artifactKey: Guid(a64316c63b53e6e4ab752499a789b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter26LeftAttack.png using Guid(a64316c63b53e6e4ab752499a789b7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa825290fc36c0e9dc8325e64aa122da') in 0.018537 seconds 
-  Import took 0.025427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/asSprites/shooter/Shooter15LeftAttack.png
-  artifactKey: Guid(ab7be4f770217c54b9ae6f4797a7ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter15LeftAttack.png using Guid(ab7be4f770217c54b9ae6f4797a7ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5a56bad022a93673ae67ae83df2966') in 0.020757 seconds 
-  Import took 0.029650 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/asSprites/shooter/Shooter4DownAttack.png
-  artifactKey: Guid(fffe26d1c5a5f6e4e967a940fea016eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter4DownAttack.png using Guid(fffe26d1c5a5f6e4e967a940fea016eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6516f7de3026262352f08f99c98f1eea') in 0.018133 seconds 
-  Import took 0.025844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/asSprites/shooter/Shooter6DownAttack.png
-  artifactKey: Guid(5721e4f9b1882074b83adb04dd1f3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter6DownAttack.png using Guid(5721e4f9b1882074b83adb04dd1f3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9bda5649f7b6e6e06417a50f4910775') in 0.023418 seconds 
-  Import took 0.031668 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/asSprites/shooter/Shooter11LeftAttack.png
-  artifactKey: Guid(863f53b83768b8945b54b4cf9efa729f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter11LeftAttack.png using Guid(863f53b83768b8945b54b4cf9efa729f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4d5632d2c1ed42b4d029c5005bf625') in 0.020868 seconds 
-  Import took 0.028329 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/asSprites/shooter/Shooter22UpAttack.png
-  artifactKey: Guid(bf4a24d5b468faf44bbfbc2ab6b64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter22UpAttack.png using Guid(bf4a24d5b468faf44bbfbc2ab6b64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772e26b223227ff57d594c7972c6b6ed') in 0.019630 seconds 
-  Import took 0.029105 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/asSprites/shooter/Shooter14LeftAttack.png
-  artifactKey: Guid(0194c32d31c815c48af1a62a9a02d0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter14LeftAttack.png using Guid(0194c32d31c815c48af1a62a9a02d0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d7cf77e6954515f29efdcd794a5d2da') in 0.019980 seconds 
-  Import took 0.027407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.172139 seconds.
-  path: Assets/asSprites/shooter/Shooter7DownAttack.png
-  artifactKey: Guid(acd85629679ea90408d5600cc9dc54a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter7DownAttack.png using Guid(acd85629679ea90408d5600cc9dc54a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2cfae35b75d20971ba627f3497d063') in 0.022565 seconds 
-  Import took 0.031428 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/asSprites/shooter/Shooter24LeftIdle.png
-  artifactKey: Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter24LeftIdle.png using Guid(7a0fe992483b15e49b75b685d9ddf437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfdd1d9be1c0c8759fbf7e6f0c0c88e') in 0.021303 seconds 
-  Import took 0.030683 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/asSprites/shooter/ShooterVProjectile1.png
-  artifactKey: Guid(175831b20e9e1ee47938a134bacf0117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/ShooterVProjectile1.png using Guid(175831b20e9e1ee47938a134bacf0117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63cae0b7220adae89974e8ff2fe7250') in 0.016721 seconds 
-  Import took 0.024393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000394 seconds.
-  path: Assets/asSprites/shooter/Shooter25LeftIdle.png
-  artifactKey: Guid(012f63b83c9eab74981076988cddff24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter25LeftIdle.png using Guid(012f63b83c9eab74981076988cddff24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c1180a7cac35b4a0c60fa3cbe769c5') in 0.023852 seconds 
-  Import took 0.031013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000392 seconds.
-  path: Assets/asSprites/shooter/Shooter21UpAttack.png
-  artifactKey: Guid(9183e8d050b7fce4ea9968eee85bcf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter21UpAttack.png using Guid(9183e8d050b7fce4ea9968eee85bcf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4237e5ec6b177e9180814dfc2ed4c010') in 0.017660 seconds 
-  Import took 0.025448 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/asSprites/shooter/Shooter30LeftAttack.png
-  artifactKey: Guid(41ce2cc26ccbd4d4e86d9d1cbf7bbe75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter30LeftAttack.png using Guid(41ce2cc26ccbd4d4e86d9d1cbf7bbe75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3979f94d2b59079b0116b7e32a1d2401') in 0.024943 seconds 
-  Import took 0.031324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000558 seconds.
-  path: Assets/asSprites/shooter/Shooter8DownAttack.png
-  artifactKey: Guid(ec63e2bc1f70da04295062e44c603bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter8DownAttack.png using Guid(ec63e2bc1f70da04295062e44c603bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49a2fefd2210ac728ca70fcdb981fd9') in 0.023842 seconds 
-  Import took 0.032108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000434 seconds.
-  path: Assets/asSprites/shooter/Shooter19UpAttack.png
-  artifactKey: Guid(180b46f9d6876ec449dcc58f08a30e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter19UpAttack.png using Guid(180b46f9d6876ec449dcc58f08a30e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c72ca7fa0693573bde85890666d422') in 0.021598 seconds 
-  Import took 0.026996 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/asSprites/shooter/Shooter16.1LeftAttack.png
-  artifactKey: Guid(fe7c0dacc14b4bc4b97484cf9195a304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter16.1LeftAttack.png using Guid(fe7c0dacc14b4bc4b97484cf9195a304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956c82391614ec8f19497081086c8bdc') in 0.019203 seconds 
-  Import took 0.026004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000399 seconds.
-  path: Assets/asSprites/shooter/Shooter18UpAttack.png
-  artifactKey: Guid(f51cf5bcd93842547ba3c678dc0c820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter18UpAttack.png using Guid(f51cf5bcd93842547ba3c678dc0c820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa5d053de960d54b691534468bd7943') in 0.019471 seconds 
-  Import took 0.026776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/asSprites/shooter/Shooter20UpAttack.png
-  artifactKey: Guid(d37fd1b9fcc9ebb4083583e62076b8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter20UpAttack.png using Guid(d37fd1b9fcc9ebb4083583e62076b8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88463b3849618fe8622e8ba3b2556b1c') in 0.021162 seconds 
-  Import took 0.027600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000408 seconds.
-  path: Assets/asSprites/shooter/Shooter29LeftAttack.png
-  artifactKey: Guid(c9d021cd8a374b04c9e37f04198c2c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter29LeftAttack.png using Guid(c9d021cd8a374b04c9e37f04198c2c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74aca7a96b1f055d6482f62551d8a5ea') in 0.018503 seconds 
-  Import took 0.027371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/asSprites/shooter/Shooter28LeftAttack.png
-  artifactKey: Guid(d0521e7e4a2f52b45a5bf8101fe08fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/Shooter28LeftAttack.png using Guid(d0521e7e4a2f52b45a5bf8101fe08fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1a1107a2d33ffad3860b7170b4feca') in 0.025025 seconds 
-  Import took 0.032322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 329.649209 seconds.
-  path: Assets/Animations/BatOverideForWolf.overrideController
-  artifactKey: Guid(de66c2e7b622b674e94278c6c223e20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/BatOverideForWolf.overrideController using Guid(de66c2e7b622b674e94278c6c223e20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5f39c0374cf430013a77ef927b8eb4') in 0.063895 seconds 
-  Import took 0.073647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.142317 seconds.
-  path: Assets/Animations/Shooter
-  artifactKey: Guid(ccdb2940c94b3974ba099059d2fa9971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter using Guid(ccdb2940c94b3974ba099059d2fa9971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0109be65618b5fb69fdc3f55498d9c') in 0.008664 seconds 
-  Import took 0.014717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.157268 seconds.
-  path: Assets/Animations/Shooter/ShooterDownAttack.anim
-  artifactKey: Guid(08e4f2827a6e10749bc33b776d4445c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/ShooterDownAttack.anim using Guid(08e4f2827a6e10749bc33b776d4445c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0a37dec43f0295a00d3885d240392a') in 0.010584 seconds 
-  Import took 0.016468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.402209 seconds.
-  path: Assets/Animations/Shooter/ShooterDownIdle.anim
-  artifactKey: Guid(0a1cc57674b18404c98c9c1a176a6356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/ShooterDownIdle.anim using Guid(0a1cc57674b18404c98c9c1a176a6356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98baf8cea136384cbfd48e7e67b001f') in 0.010413 seconds 
-  Import took 0.020119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 189.152654 seconds.
-  path: Assets/asSprites/shooter/ShooterHProjectile2 - Copy.png
-  artifactKey: Guid(9fdc1945ab2aa0b42971a7ae4007a2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/ShooterHProjectile2 - Copy.png using Guid(9fdc1945ab2aa0b42971a7ae4007a2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fa21d3b256c76284110946ab2cf443') in 0.030224 seconds 
-  Import took 0.039252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/asSprites/shooter/ShooterVProjectile1 - Copy.png
-  artifactKey: Guid(37de750de1aeb814f9dae7190353a44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/asSprites/shooter/ShooterVProjectile1 - Copy.png using Guid(37de750de1aeb814f9dae7190353a44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61cfb82d0ca89f9959c674b2e327d99d') in 0.022831 seconds 
-  Import took 0.030119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 117.503334 seconds.
-  path: Assets/Animations/Shooter/ShooterVerticalProjectile.anim
-  artifactKey: Guid(84fbeb7828c43ba4b8ff950e78f5b72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/ShooterVerticalProjectile.anim using Guid(84fbeb7828c43ba4b8ff950e78f5b72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206b70ea21b67dd93139f99eb89fea06') in 0.009763 seconds 
-  Import took 0.020557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.119971 seconds.
-  path: Assets/Animations/Shooter/ShooterUpIdle.anim
-  artifactKey: Guid(8c43243d6032e2241b7bf40a5f06d93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/ShooterUpIdle.anim using Guid(8c43243d6032e2241b7bf40a5f06d93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d4906deea233a00548aa5f4978030b') in 0.009927 seconds 
-  Import took 0.016281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 181.176428 seconds.
-  path: Assets/TileAssets/grass_tile_3 - Copy.asset
-  artifactKey: Guid(c9e00522f544ebb46a2d1f0ffc1296cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileAssets/grass_tile_3 - Copy.asset using Guid(c9e00522f544ebb46a2d1f0ffc1296cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4b8b0d889155e353d1cb687692fb12') in 0.050391 seconds 
-  Import took 0.058244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/TileAssets/ShooterTile.asset
-  artifactKey: Guid(79a870aac8553df4bacbc6a026dc28eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileAssets/ShooterTile.asset using Guid(79a870aac8553df4bacbc6a026dc28eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0edf44124f22dbdaeac889ce4ba411e') in 0.012885 seconds 
-  Import took 0.019316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000395 seconds.
-  path: Assets/TileAssets/ShooterUpTile.asset
-  artifactKey: Guid(7347a168d614e2147ae954c211a47964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileAssets/ShooterUpTile.asset using Guid(7347a168d614e2147ae954c211a47964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9fa701a8a6c3fdae12fbf46a9cdb5b') in 0.011883 seconds 
-  Import took 0.019325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 120.177167 seconds.
-  path: Assets/Prefabs/Tiles/Sender.prefab
-  artifactKey: Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Sender.prefab using Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd588c09b86868046107de3dd97a2d4') in 0.104085 seconds 
-  Import took 0.111638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.501525 seconds.
-  path: Assets/Prefabs/Tiles/Sender.prefab
-  artifactKey: Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Sender.prefab using Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0c68d1348fecc7410e247a21286e1b') in 0.021963 seconds 
-  Import took 0.030127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.141143 seconds.
-  path: Assets/Prefabs/Tiles/Sender - Copy (2).prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Sender - Copy (2).prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162499011b73ce5c06c4607096964c69') in 0.024135 seconds 
-  Import took 0.032499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Prefabs/Tiles/Sender - Copy.prefab
-  artifactKey: Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Sender - Copy.prefab using Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94148854af4f6b378aae0d533bcab656') in 0.028550 seconds 
-  Import took 0.036426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Prefabs/Tiles/Sender - Copy (3).prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Sender - Copy (3).prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6e38a3588735930859d1838257322a') in 0.023188 seconds 
-  Import took 0.029801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.952047 seconds.
-  path: Assets/Prefabs/Tiles/ShooterUP.prefab
-  artifactKey: Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterUP.prefab using Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12ac9e5ed3f92afb51ec5925eea21a8') in 0.020979 seconds 
-  Import took 0.028879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.986486 seconds.
-  path: Assets/Prefabs/Tiles/ShooterDOWN.prefab
-  artifactKey: Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterDOWN.prefab using Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef1360d56db0cf10a357203097d880b') in 0.022731 seconds 
-  Import took 0.033905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.059743 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4f6c7d41f45e1aba5010ed2a80c24f') in 0.023768 seconds 
-  Import took 0.032574 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.436240 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953c041fcc6141c486ad2ef4715e624f') in 0.022769 seconds 
-  Import took 0.030000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.799595 seconds.
-  path: Assets/Prefabs/Tiles/ShooterDOWN.prefab
-  artifactKey: Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterDOWN.prefab using Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Shooter1DownIdle) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (Shooter1DownIdle) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '5b7e7b3110e3ab4484dec59aadc95501') in 0.024055 seconds 
-  Import took 0.032001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.629909 seconds.
-  path: Assets/Animations/Shooter/Shooter1DownIdle.controller
-  artifactKey: Guid(d9e4e0d3568ffa24b8fd055933d7b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/Shooter1DownIdle.controller using Guid(d9e4e0d3568ffa24b8fd055933d7b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c01bb691563bc6a7ad7aca46973d992') in 0.008370 seconds 
-  Import took 0.014264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 87.186028 seconds.
-  path: Assets/Animations/Shooter/ShooterUpOverride.overrideController
-  artifactKey: Guid(5657f769861360a4699efbf2488b0fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/ShooterUpOverride.overrideController using Guid(5657f769861360a4699efbf2488b0fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdda90dcdea256bda9b15e354fb1fd54') in 0.010270 seconds 
-  Import took 0.017523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 49.250642 seconds.
-  path: Assets/Animations/Shooter/New Animator Override Controller.overrideController
-  artifactKey: Guid(c4793d8b23fd85d45ab81ba0535a7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/New Animator Override Controller.overrideController using Guid(c4793d8b23fd85d45ab81ba0535a7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2212133b72bb22dee403255d7c677ed6') in 0.009224 seconds 
-  Import took 0.016340 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.390646 seconds.
-  path: Assets/Animations/Shooter/ShooterLeftOverride.overrideController
-  artifactKey: Guid(c4793d8b23fd85d45ab81ba0535a7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/ShooterLeftOverride.overrideController using Guid(c4793d8b23fd85d45ab81ba0535a7565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8d6733b492fbc1d74f54dd90fc653d') in 0.017175 seconds 
-  Import took 0.028308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.125865 seconds.
-  path: Assets/Animations/Shooter/ShooterRightOverride.overrideController
-  artifactKey: Guid(d4e7c92186a2a354b9fe1fa29acddec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Shooter/ShooterRightOverride.overrideController using Guid(d4e7c92186a2a354b9fe1fa29acddec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c4cff7765716ec7e7762191433b381') in 0.008868 seconds 
-  Import took 0.016090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.607251 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19dbd10264cbace3994a8a9f07af93e5') in 0.020945 seconds 
-  Import took 0.027430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.958076 seconds.
-  path: Assets/Prefabs/Tiles/ShooterUP.prefab
-  artifactKey: Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterUP.prefab using Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2de01345c1efb06e7f0fea947068794') in 0.020104 seconds 
-  Import took 0.027048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.869511 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3017acea2cb25b0cdb9af46ba233fd8') in 0.020581 seconds 
-  Import took 0.028564 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.135108 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c81b49a0453f803c97746b6662f4ab') in 0.021109 seconds 
-  Import took 0.029600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.757414 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29537123b85d3b5208cac0b353f4f642') in 0.020495 seconds 
-  Import took 0.030211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.648924 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3331da493a39a290e19f255bba40132b') in 0.018526 seconds 
-  Import took 0.026468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.230079 seconds.
-  path: Assets/Prefabs/Tiles/ShooterDOWN.prefab
-  artifactKey: Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterDOWN.prefab using Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Shooter1DownIdle) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (Shooter1DownIdle) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'c422f8d71d7b763dab151ebf1161b9e5') in 0.021491 seconds 
-  Import took 0.030192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 89.210627 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '1257acdf6f72431b0241d505f389f3f4') in 0.037726 seconds 
-  Import took 0.053974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.265307 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '613ef8444f34aaad73ced256e2e465d9') in 0.016793 seconds 
-  Import took 0.024132 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.438984 seconds.
-  path: Assets/Prefabs/Tiles/ShooterUP.prefab
-  artifactKey: Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterUP.prefab using Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterUpOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterUpOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '30b6562eb35aa4a7bcf5507ea5138eea') in 0.017042 seconds 
-  Import took 0.025930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.296003 seconds.
-  path: Assets/TileAssets/ShooterDownTile.asset
-  artifactKey: Guid(79a870aac8553df4bacbc6a026dc28eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileAssets/ShooterDownTile.asset using Guid(79a870aac8553df4bacbc6a026dc28eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa1a700ad3010510c90f2b79381c506') in 0.012801 seconds 
-  Import took 0.022224 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.755089 seconds.
-  path: Assets/TileAssets/ShooterRight.asset
-  artifactKey: Guid(c62800f2fd9d7e24d9900b227a67bd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileAssets/ShooterRight.asset using Guid(c62800f2fd9d7e24d9900b227a67bd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38a6068c86f6c7864eab488cd409296') in 0.010038 seconds 
-  Import took 0.020152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.755221 seconds.
-  path: Assets/TileAssets/ShooterLeftTile.asset
-  artifactKey: Guid(bcb6ee4016af5604490854a890d31d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TileAssets/ShooterLeftTile.asset using Guid(bcb6ee4016af5604490854a890d31d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6acbd5354e1894503102083640475a') in 0.011367 seconds 
-  Import took 0.019219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 144.622757 seconds.
-  path: Assets/Prefabs/Tiles/ShooterDOWN.prefab
-  artifactKey: Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterDOWN.prefab using Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Shooter1DownIdle) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (Shooter1DownIdle) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'ed85efcfcee8a6fe65d1ff84fa3a9ba1') in 0.019594 seconds 
-  Import took 0.029219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.273694 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '35065bae62d19c72e58d51cf30fefd35') in 0.049145 seconds 
-  Import took 0.065770 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.824163 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'd23ce0764b2e6ad53852cb30b2a7e6d9') in 0.017250 seconds 
-  Import took 0.026567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.511409 seconds.
-  path: Assets/Prefabs/Tiles/ShooterLEFT.prefab
-  artifactKey: Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterLEFT.prefab using Guid(1d9eccb653c33634dbafd5dd976efa23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterLeftOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'd2d2edc11f20aef40f8273bb7e307dcd') in 0.018391 seconds 
-  Import took 0.026477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.581971 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '49ab024b7f6a0b6ef318247fb0591c53') in 0.020405 seconds 
-  Import took 0.031256 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.579026 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '4872e85e9b1c9258e4e3644e51e9aec6') in 0.017818 seconds 
-  Import took 0.025857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.550922 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '7445c1d81f1624e19cd1d2804d70f2fb') in 0.015973 seconds 
-  Import took 0.023362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.399272 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'b4844dbdb00c2221de42fafb39ae9eda') in 0.017543 seconds 
-  Import took 0.025292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.489027 seconds.
-  path: Assets/Prefabs/Tiles/ShooterRIGHT.prefab
-  artifactKey: Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterRIGHT.prefab using Guid(8b58aeb89a90570469ca3534edb3b04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterRightOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'f670bc3c55078fdcb73831ee500bfc6b') in 0.016872 seconds 
-  Import took 0.025125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.265617 seconds.
-  path: Assets/Prefabs/Tiles/ShooterUP.prefab
-  artifactKey: Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterUP.prefab using Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterUpOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterUpOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'dc83a44a168c8b195df3e907d96ad70c') in 0.027844 seconds 
-  Import took 0.039114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.318559 seconds.
-  path: Assets/Prefabs/Tiles/ShooterUP.prefab
-  artifactKey: Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/ShooterUP.prefab using Guid(1ef45d4d162164624a7d2138fde2c55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterUpOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterUpOverride) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '27c4a9aa1f35afb522bfba80678ab96b') in 0.018466 seconds 
-  Import took 0.027913 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.381428 seconds.
-  path: Assets/Prefabs/Monsters/Kami-Acid.prefab
-  artifactKey: Guid(1294dfec4f59b6347a39002238d3bdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Monsters/Kami-Acid.prefab using Guid(1294dfec4f59b6347a39002238d3bdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c6241f71a53d1a478371d4b46f7fd6f') in 0.062378 seconds 
-  Import took 0.072871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000382 seconds.
-  path: Assets/Prefabs/Monsters/Zombie.prefab
-  artifactKey: Guid(82054266aeb2c90429fa346db8bcb3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Monsters/Zombie.prefab using Guid(82054266aeb2c90429fa346db8bcb3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddfd7522617134cdf0c50ba666988876') in 0.081325 seconds 
-  Import took 0.093710 seconds .
+  Time since last request: 2.373618 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c08e2f5fd5a92bea9aafae63b64c2d') in 0.038154 seconds 
+  Import took 0.043969 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.023859 seconds.
+Registered in 0.026419 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.77 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.92 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.451 seconds
+- Completed reload, in  2.050 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2451ms)
-		BeginReloadAssembly (296ms)
+	ReloadAssembly (2050ms)
+		BeginReloadAssembly (181ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (103ms)
-		EndReloadAssembly (2053ms)
-			LoadAssemblies (160ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1786ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (529ms)
+			SetupTypeCache (462ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (882ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (684ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.05 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.5 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 119 unused Assets to reduce memory usage. Loaded Objects now: 3594.
+Total: 11.556600 ms (FindLiveObjects: 0.314300 ms CreateObjectMapping: 0.177800 ms MarkObjects: 10.966900 ms  DeleteObjects: 0.095900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 167.966356 seconds.
+  path: Assets/Plugins/FMOD/images/EventIcon.png
+  artifactKey: Guid(a602f206f9cb31f439c79a2fe23687c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/FMOD/images/EventIcon.png using Guid(a602f206f9cb31f439c79a2fe23687c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d109c93dbe3905ad24b221806fc0b38') in 0.183609 seconds 
+  Import took 0.191979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.080635 seconds.
+  path: Assets/Scripts/Enemies/Enemy_Portal.cs
+  artifactKey: Guid(d4262fd29d3d541dc83dc9d4ba16ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemies/Enemy_Portal.cs using Guid(d4262fd29d3d541dc83dc9d4ba16ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252999f674cdd56a050105a6338c6ff7') in 0.016663 seconds 
+  Import took 0.024318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.159547 seconds.
+  path: Assets/Enemy_Shooter.cs
+  artifactKey: Guid(cc02ad688e5c192459b88f81b90ce094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy_Shooter.cs using Guid(cc02ad688e5c192459b88f81b90ce094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2c05de3e29fa2acc96ff3ea5326a1e') in 0.009430 seconds 
+  Import took 0.015656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.463230 seconds.
+  path: Assets/Scripts/Enemies/Enemy.cs
+  artifactKey: Guid(f807a95e9ac3ffa48a7583df364b00b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemies/Enemy.cs using Guid(f807a95e9ac3ffa48a7583df364b00b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5d83404c6fe4c345f25c813d6cfeb0') in 0.009622 seconds 
+  Import took 0.016243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 167.258854 seconds.
+  path: Assets/Scripts/CharacterRelated/Character.cs
+  artifactKey: Guid(f797cfec333c2e84484c77b9c24a4c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CharacterRelated/Character.cs using Guid(f797cfec333c2e84484c77b9c24a4c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57dcdb8ab76eb317ad9883cb60dd4f8c') in 0.008321 seconds 
+  Import took 0.016651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 272.809157 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807e3a6a81222748155d151bf7385325') in 0.043737 seconds 
+  Import took 0.053542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3688.150198 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5badc7d909bb3f8dab71a6d315ad44b0') in 0.014984 seconds 
+  Import took 0.023932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.126925 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632d434bf3eb0f55f585ac54649c2159') in 0.015120 seconds 
+  Import took 0.024139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.997476 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17a63f8613642d00e742b495053eb34') in 0.009270 seconds 
+  Import took 0.016187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.842742 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a538fe044115b8ce23b860e164344c9') in 0.007656 seconds 
+  Import took 0.015641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.773880 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943515f9e675fb01f761436acca7b167') in 0.013963 seconds 
+  Import took 0.020436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.872064 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8425907375e045ed6e54e5ea8d5aab') in 0.008412 seconds 
+  Import took 0.016133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.396074 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154117724c82a323b8a053f5362f81c4') in 0.008102 seconds 
+  Import took 0.014802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.981364 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d90b8529f3472b2abaec05864d0b65') in 0.007867 seconds 
+  Import took 0.015195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.806661 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e101850716a6a738ede0ff03bac16ae') in 0.008183 seconds 
+  Import took 0.015267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.512335 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d017baf63d6dc951bd92a918bdcc9d4') in 0.013728 seconds 
+  Import took 0.020799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.470681 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c14e965da2538b185805cb3ba4b80a2') in 0.007792 seconds 
+  Import took 0.015512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.816835 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd37579a357c536bc3c149e437d33bb5c') in 0.007685 seconds 
+  Import took 0.014781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.224776 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d550a6f3acc9daee9ce71c1767cc45d') in 0.008596 seconds 
+  Import took 0.016915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.729287 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b307a6cfb4d3e587419b9bdc0a6626e1') in 0.008313 seconds 
+  Import took 0.016728 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015791 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.80 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.000 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2001ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1726ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (508ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (123ms)
-			SetupLoadedEditorAssemblies (1057ms)
+			RebuildScriptCaches (95ms)
+			SetupLoadedEditorAssemblies (839ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (646ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.55 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.6 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 119 unused Assets to reduce memory usage. Loaded Objects now: 3598.
+Total: 10.627500 ms (FindLiveObjects: 0.382100 ms CreateObjectMapping: 0.252400 ms MarkObjects: 9.870800 ms  DeleteObjects: 0.120900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015704 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.97 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.113 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2113ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (1849ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (460ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (965ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (817ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (770ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.82 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.6 MB.
+System memory in use after: 125.9 MB.
+
+Unloading 119 unused Assets to reduce memory usage. Loaded Objects now: 3600.
+Total: 11.229900 ms (FindLiveObjects: 0.393700 ms CreateObjectMapping: 0.170800 ms MarkObjects: 10.548800 ms  DeleteObjects: 0.115400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 289.618178 seconds.
+  path: Assets/Prefabs/Monsters/Ghost.prefab
+  artifactKey: Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monsters/Ghost.prefab using Guid(91695759a6f74a34482ea82d14743e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357ef7cc51abbe7bd3b0dbd3e63a7546') in 0.107017 seconds 
+  Import took 0.115751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.864245 seconds.
+  path: Assets/Drummer.cs
+  artifactKey: Guid(f94108c79df6f8746b32f46a072658f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drummer.cs using Guid(f94108c79df6f8746b32f46a072658f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a5f62ec775a6dfd75ff0d928031aed') in 0.009292 seconds 
+  Import took 0.016871 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014072 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.44 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.927 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1927ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1667ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (471ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (820ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (605ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.61 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.7 MB.
+System memory in use after: 130.9 MB.
+
+Unloading 119 unused Assets to reduce memory usage. Loaded Objects now: 3603.
+Total: 10.884000 ms (FindLiveObjects: 0.323300 ms CreateObjectMapping: 0.162600 ms MarkObjects: 10.317300 ms  DeleteObjects: 0.079500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 143.944922 seconds.
+  path: Assets/Drummer.cs
+  artifactKey: Guid(f94108c79df6f8746b32f46a072658f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drummer.cs using Guid(f94108c79df6f8746b32f46a072658f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b71ddd180928d0dc3c95488b9a5738') in 0.007693 seconds 
+  Import took 0.013700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.344893 seconds.
+  path: Assets/Prefabs/Drummer.prefab
+  artifactKey: Guid(08d45df050174a84883aace92e6b4333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Drummer.prefab using Guid(08d45df050174a84883aace92e6b4333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfe38d08eed871ebb585771e6abd239') in 0.168777 seconds 
+  Import took 0.178233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 173.431476 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05420e09414a12a96fdf29c821b7e2c') in 0.038271 seconds 
+  Import took 0.046141 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019185 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.126 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2127ms)
+		BeginReloadAssembly (224ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1799ms)
+			LoadAssemblies (158ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (463ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (890ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (701ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.33 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.84 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3234 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 125.7 MB.
-System memory in use after: 125.9 MB.
+Unloading 3236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.8 MB.
+System memory in use after: 131.0 MB.
 
-Unloading 119 unused Assets to reduce memory usage. Loaded Objects now: 3595.
-Total: 11.486100 ms (FindLiveObjects: 0.388800 ms CreateObjectMapping: 0.189000 ms MarkObjects: 10.813200 ms  DeleteObjects: 0.090800 ms)
+Unloading 125 unused Assets to reduce memory usage. Loaded Objects now: 3606.
+Total: 10.153300 ms (FindLiveObjects: 0.325400 ms CreateObjectMapping: 0.157800 ms MarkObjects: 9.546500 ms  DeleteObjects: 0.122200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1788,92 +728,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 281.620102 seconds.
-  path: Assets/Scripts/TileScripts/Sender.cs
-  artifactKey: Guid(44eb9c6d112844b55bdeee3d11ac8f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/TileScripts/Sender.cs using Guid(44eb9c6d112844b55bdeee3d11ac8f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd339eebcb3a78072ec5b2792bc3fa8f') in 0.020465 seconds 
-  Import took 0.028533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 193.069797 seconds.
-  path: Assets/Prefabs/Projectile/LightningPrefab.prefab
-  artifactKey: Guid(cf86cb71955ffee4ab16c6c5c06a31eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectile/LightningPrefab.prefab using Guid(cf86cb71955ffee4ab16c6c5c06a31eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (ShooterHProjectile2 - Copy) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (ShooterHProjectile2 - Copy) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'ceab74f15dff22c2b5006a72a00164e4') in 0.087970 seconds 
-  Import took 0.095944 seconds .
-
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.015556 seconds.
+Registered in 0.013795 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 7.07 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.62 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.530 seconds
+- Completed reload, in  1.991 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4531ms)
-		BeginReloadAssembly (228ms)
+	ReloadAssembly (1991ms)
+		BeginReloadAssembly (174ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (71ms)
-		EndReloadAssembly (4017ms)
-			LoadAssemblies (229ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1735ms)
+			LoadAssemblies (144ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1186ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (144ms)
-			SetupLoadedEditorAssemblies (2033ms)
+			SetupTypeCache (464ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (882ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (7ms)
-				BeforeProcessingInitializeOnLoad (299ms)
-				ProcessInitializeOnLoadAttributes (1565ms)
-				ProcessInitializeOnLoadMethodAttributes (120ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (1ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (691ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.53 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.62 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3234 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 125.8 MB.
-System memory in use after: 126.0 MB.
+Unloading 3236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.8 MB.
+System memory in use after: 131.0 MB.
 
-Unloading 119 unused Assets to reduce memory usage. Loaded Objects now: 3598.
-Total: 26.944300 ms (FindLiveObjects: 0.686400 ms CreateObjectMapping: 0.513400 ms MarkObjects: 25.502400 ms  DeleteObjects: 0.233800 ms)
+Unloading 119 unused Assets to reduce memory usage. Loaded Objects now: 3608.
+Total: 10.048000 ms (FindLiveObjects: 0.374600 ms CreateObjectMapping: 0.153300 ms MarkObjects: 9.452700 ms  DeleteObjects: 0.065800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1885,4 +784,36 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 244.697581 seconds.
+  path: Assets/Assets.index
+  artifactKey: Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets.index using Guid(62ed74524aeb35540a0b06e48576c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cc3eaefd7ae57fef47dc1d1acb791e') in 0.045558 seconds 
+  Import took 0.052112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 385.205911 seconds.
+  path: Assets/Animations/Shooter/ShooterRightOverride.overrideController
+  artifactKey: Guid(d4e7c92186a2a354b9fe1fa29acddec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Shooter/ShooterRightOverride.overrideController using Guid(d4e7c92186a2a354b9fe1fa29acddec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc276cddcc5f2d17b3356d53f6da8ed3') in 0.049627 seconds 
+  Import took 0.060099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.764164 seconds.
+  path: Assets/Prefabs/Tiles/ShooterDOWN.prefab
+  artifactKey: Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tiles/ShooterDOWN.prefab using Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b433fd67a8002a5b76658556f92c291') in 0.097964 seconds 
+  Import took 0.105537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.220466 seconds.
+  path: Assets/Prefabs/Tiles/ShooterDOWN.prefab
+  artifactKey: Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tiles/ShooterDOWN.prefab using Guid(c642c8b413e13854f8d469000ea7d6b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d86d59882c93fb69c50d7ce8c0e6a7') in 0.023249 seconds 
+  Import took 0.030177 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

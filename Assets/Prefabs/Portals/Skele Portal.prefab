@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 243616326192996465}
   - component: {fileID: 4073976599639048954}
   - component: {fileID: 2050581013644147722}
+  - component: {fileID: -8317322247294462330}
   m_Layer: 0
   m_Name: Skele Portal
   m_TagString: Enemy
@@ -234,6 +235,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ObjectPooler: {fileID: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-8317322247294462330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243616326192996478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 425047322
+      Data2: 1121611349
+      Data3: -1465249617
+      Data4: 1709196481
+    Path: event:/SoundEffects/The Skeletonking Lives
+  Event: 
+  PlayEvent: 11
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &243616326536365810
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +532,7 @@ GameObject:
   - component: {fileID: 243616327314075846}
   - component: {fileID: 243616327314075832}
   - component: {fileID: 243616327314075833}
+  - component: {fileID: 775155572073595812}
   m_Layer: 3
   m_Name: Range
   m_TagString: Untagged
@@ -550,6 +582,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fbbc0dbac8a54499c726ea99878d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &775155572073595812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243616327314075847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2079828372
+      Data2: 1292376704
+      Data3: -1185723504
+      Data4: -1443404083
+    Path: event:/SoundEffects/Bones Rule
+  Event: 
+  PlayEvent: 9
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &243616327651003426
 GameObject:
   m_ObjectHideFlags: 0

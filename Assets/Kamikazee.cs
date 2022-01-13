@@ -7,6 +7,7 @@ public class Kamikazee : Enemy
 
     [SerializeField] protected GameObject payLoad;
     [SerializeField] protected float payLoadSpeed;
+    [SerializeField]
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +27,44 @@ public class Kamikazee : Enemy
      
     }
 
-    public IEnumerator DropPayLoad()
+    void FixedUpdate()
+    {
+        if (IsAlive)
+        {
+            if (!IsAttacking)
+            {
+                MyAttackTime += Time.deltaTime;
+            }
+
+            if (!(this is Sender))
+            {
+                currentState.Update();
+
+                /*  if (health.MyCurrentValue <= 0)
+                  {
+                      myDumbAssFace.ReturnToPool();
+                      health.MyCurrentValue = initHealth;
+                      Reset();
+                  }*/
+            }
+        }
+
+        if (!(IsAlive))
+        {
+            DropPayLoad();
+            myDumbAssFace.ReturnToPool();
+            health.MyCurrentValue = initHealth;
+            Reset();
+        }
+
+
+    }
+
+    public void DropPayLoad()
 
     {
         payLoad.active = true;
-
-        yield return new WaitForSeconds(payLoadSpeed);
-        payLoad.active = false;
+        payLoad.transform.SetParent(null);
         TakeDamage(500, MyTarget);
     }
 }

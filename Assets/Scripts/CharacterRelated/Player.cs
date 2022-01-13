@@ -263,7 +263,7 @@ public class Player : Character
      
             StartCoroutine(DashCoroutine());
 
-        Debug.Log("ya" + dashTimer);
+
     }
 
     private IEnumerator DashCoroutine()

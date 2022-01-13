@@ -12,6 +12,10 @@ public class Sender: Enemy
     [SerializeField]
     private Transform[] exitPoints;
 
+    [SerializeField]
+    private Vector2 myVector;
+
+
     /// <summary>
     /// Index that keeps track of which exit point to use, 2 is default down
     /// </summary>
@@ -61,7 +65,7 @@ public class Sender: Enemy
         //Creates a new spell, so that we can use the information form it to cast it in the game
         
         IsAttacking = true; //Indicates if we are attacking
-
+        MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         GameObject p = GuitarShooter.GrabObject();
         //GameObject pp = GuitarShooter.GrabObject();
       //  totems have no practical use in the dreeam
@@ -72,7 +76,7 @@ public class Sender: Enemy
           yield return new WaitForSeconds(1); //This is a hardcoded cast time, for debugging
     //135 beats per minutes divided by 60 = 2.25 
         EvilProjectile q = p.GetComponent<EvilProjectile>();
-        MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
+
         q.Initialize(q.MyDamage);
        // q.MyEvilBody.velocity = (MyTarget.position - p.transform.position );// * -1 * q.MySpeed;
         
@@ -81,7 +85,7 @@ public class Sender: Enemy
         //EvilProjectile qq = pp.GetComponent<EvilProjectile>();
         //qq.PlayerOrigin = 1;
         //qq.Initialize(qq.MyDamage);
-        q.MyEvilBody.velocity = Vector2.down * q.MySpeed;
+        q.MyEvilBody.velocity = myVector * q.MySpeed;
         
         StopAttack(); //Ends the attack
 
@@ -99,7 +103,7 @@ public class Sender: Enemy
 
         IsAttacking = false; //Makes sure that we are not attacking
 
-        MyAnimator.SetBool("attack", false); //Stops the attack animation
+        MyAnimator.SetBool("attack", IsAttacking); //Stops the attack animation
 
         if (attackRoutine != null) //Checks if we have a reference to an co routine
         {

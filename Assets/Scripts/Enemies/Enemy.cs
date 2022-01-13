@@ -19,7 +19,7 @@ public class Enemy : Character
     /// <summary>
     /// The enemys current state
     /// </summary>
-    private IState currentState;
+    protected IState currentState;
 
     /// <summary>
     /// The enemys attack range
@@ -103,6 +103,7 @@ public class Enemy : Character
 
         if (!(IsAlive))
         {
+           
             myDumbAssFace.ReturnToPool();
             health.MyCurrentValue = initHealth;
             Reset();
@@ -163,10 +164,13 @@ public class Enemy : Character
     {
         transform.position = transform.root.position;
         //this.health.Bar.Reset();
-        this.MyHealth.MyMaxValue = health;
-        this.MyHealth.MyCurrentValue = this.MyHealth.MyMaxValue;
+        //failed attempt tonull checkif (this.MyHealth.CuurentValue != 0)
+       // {
+            this.MyHealth.MyMaxValue = health;
+            this.MyHealth.MyCurrentValue = this.MyHealth.MyMaxValue;
 
-        StartCoroutine(Scale(new Vector3(0.1f,0.1f), new Vector3(1,1)));
+            StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1)));
+       // }
     }
 
     public IEnumerator Scale(Vector3 from, Vector3 to)

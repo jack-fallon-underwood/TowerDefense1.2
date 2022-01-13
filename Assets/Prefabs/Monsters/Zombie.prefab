@@ -241,7 +241,8 @@ GameObject:
   - component: {fileID: 9053633232757422847}
   - component: {fileID: 8953937112560056015}
   - component: {fileID: 3506402141737291165}
-  m_Layer: 9
+  - component: {fileID: -7577027067971273779}
+  m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -421,6 +422,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ObjectPooler: {fileID: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-7577027067971273779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003578002324177605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1325072276
+      Data2: 1208707312
+      Data3: 313781951
+      Data4: 1630860885
+    Path: event:/SoundEffects/ZombieMoan3
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &9003595475957186849
 GameObject:
   m_ObjectHideFlags: 0

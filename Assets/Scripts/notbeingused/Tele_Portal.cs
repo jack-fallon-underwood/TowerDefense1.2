@@ -31,7 +31,6 @@ public class Tele_Portal : MonoBehaviour
        if (collision.tag == "Player")
        {
 
-            Debug.Log("nizzle");
             SceneManager.LoadScene(1);
        }
     }

@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 5133538624065678804}
   - component: {fileID: 8029869360828015103}
   - component: {fileID: 6784355103634101776}
+  - component: {fileID: 6040879128022985620}
   m_Layer: 9
   m_Name: Werewolf
   m_TagString: Enemy
@@ -493,6 +494,36 @@ CircleCollider2D:
   m_Offset: {x: 0.034775972, y: 0}
   serializedVersion: 2
   m_Radius: 1.3499072
+--- !u!114 &6040879128022985620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6954046889736595694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1596215233
+      Data2: 1234296338
+      Data3: -1403858504
+      Data4: -345834136
+    Path: event:/SoundEffects/Howl
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6954380070807747378
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +611,7 @@ GameObject:
   - component: {fileID: 1500983010937498319}
   - component: {fileID: 8870420979085600747}
   - component: {fileID: 7303549496109146741}
+  - component: {fileID: 587090293390467032}
   m_Layer: 0
   m_Name: Range
   m_TagString: Untagged
@@ -629,6 +661,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 30
+--- !u!114 &587090293390467032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522884599503058929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1640289143
+      Data2: 1081759672
+      Data3: -510541127
+      Data4: -477525618
+    Path: event:/SoundEffects/Sniffing
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8818608729975787362
 GameObject:
   m_ObjectHideFlags: 0

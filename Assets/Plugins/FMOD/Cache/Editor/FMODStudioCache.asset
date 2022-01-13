@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8282026323367699790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/row13
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/row13
+  Guid:
+    Data1: -503618169
+    Data2: 1142434887
+    Data3: -1165756225
+    Data4: 2004662826
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8106510567077388644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/For The Army Of Skulls
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/For The Army Of Skulls
+  Guid:
+    Data1: 1033097561
+    Data2: 1204942161
+    Data3: -1059477586
+    Data4: -768962882
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7776812520783102894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23,11 +77,65 @@ MonoBehaviour:
   - {fileID: -459090432791371451}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 148114
+--- !u!114 &-7558687335251005354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Deflection
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Deflection
+  Guid:
+    Data1: -1291744030
+    Data2: 1194399373
+    Data3: 237830041
+    Data4: -1375755924
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6652676823453559355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/12 Hours Remaining V4
+  m_EditorClassIdentifier: 
+  Path: event:/Music/12 Hours Remaining V4
+  Guid:
+    Data1: 393643654
+    Data2: 1104177044
+    Data3: -418145130
+    Data4: -1285293701
+  Banks:
+  - {fileID: -459090432791371451}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 821930
 --- !u!114 &-6385144046298915767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,11 +179,92 @@ MonoBehaviour:
   Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637763828578192180
+  lastModified: 637773563801696065
   FileSizes:
   - Name: Desktop
-    Value: 1808416
+    Value: 1808896
   Exists: 1
+--- !u!114 &-3498478642303752998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Bite
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Bite
+  Guid:
+    Data1: -95232412
+    Data2: 1240338049
+    Data3: 1714721982
+    Data4: 149399088
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2715189989041279663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Sniffing
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Sniffing
+  Guid:
+    Data1: -1640289143
+    Data2: 1081759672
+    Data3: -510541127
+    Data4: -477525618
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1245781646035248639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/TongueNoise
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/TongueNoise
+  Guid:
+    Data1: -1541459920
+    Data2: 1094497299
+    Data3: 811598231
+    Data4: 2130327874
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-459090432791371451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,11 +280,92 @@ MonoBehaviour:
   Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637763828578680862
+  lastModified: 637773564047606394
   FileSizes:
   - Name: Desktop
-    Value: 4575200
+    Value: 14219104
   Exists: 1
+--- !u!114 &-428041936441951973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Vamp Reveal
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Vamp Reveal
+  Guid:
+    Data1: -1444548683
+    Data2: 1109785408
+    Data3: 2072186249
+    Data4: 1434027639
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-390570185910845393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/ZombieMoan1
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/ZombieMoan1
+  Guid:
+    Data1: 540207623
+    Data2: 1157212395
+    Data3: -1700241785
+    Data4: -1497276659
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-244629930766736756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Fish Yell
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Fish Yell
+  Guid:
+    Data1: 290280358
+    Data2: 1080907204
+    Data3: -346948213
+    Data4: -555869281
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,17 +382,249 @@ MonoBehaviour:
   - {fileID: 8311077568645385596}
   - {fileID: -4849709076942215408}
   - {fileID: -459090432791371451}
+  - {fileID: 2427762785228482564}
   EditorEvents:
   - {fileID: -7776812520783102894}
   - {fileID: -6385144046298915767}
   - {fileID: 3844646077229828248}
+  - {fileID: 311127605441112876}
+  - {fileID: -8282026323367699790}
+  - {fileID: 2532654441373588083}
+  - {fileID: 4704745079520009249}
+  - {fileID: -7558687335251005354}
+  - {fileID: -428041936441951973}
+  - {fileID: 7241958329955143030}
+  - {fileID: 1642314369529958451}
+  - {fileID: -8106510567077388644}
+  - {fileID: -3498478642303752998}
+  - {fileID: -2715189989041279663}
+  - {fileID: 2022332243588399608}
+  - {fileID: -244629930766736756}
+  - {fileID: 1995243272584436123}
+  - {fileID: 722328641573311252}
+  - {fileID: -6652676823453559355}
+  - {fileID: -390570185910845393}
+  - {fileID: -1245781646035248639}
+  - {fileID: 2875873443369122618}
+  - {fileID: 7537017642062053344}
+  - {fileID: 6427693275326083228}
+  - {fileID: 4677277367820998249}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4849709076942215408}
   StringsBanks:
   - {fileID: 8311077568645385596}
-  cacheTime: 637763828578680862
+  cacheTime: 637773564048157528
   cacheVersion: 10
+--- !u!114 &311127605441112876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/FishAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/FishAttack
+  Guid:
+    Data1: -55558281
+    Data2: 1139835922
+    Data3: -352265309
+    Data4: -682156741
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &722328641573311252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/GulpGulpGulp
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/GulpGulpGulp
+  Guid:
+    Data1: -1297705498
+    Data2: 1145655504
+    Data3: 778463909
+    Data4: -293817498
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1642314369529958451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Howl
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Howl
+  Guid:
+    Data1: -1596215233
+    Data2: 1234296338
+    Data3: -1403858504
+    Data4: -345834136
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1995243272584436123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/ZombieMoan2
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/ZombieMoan2
+  Guid:
+    Data1: -2081169199
+    Data2: 1335589296
+    Data3: -1139674460
+    Data4: -425156364
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2022332243588399608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Bones Rule
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Bones Rule
+  Guid:
+    Data1: 2079828372
+    Data2: 1292376704
+    Data3: -1185723504
+    Data4: -1443404083
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2427762785228482564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 637773564048157528
+  FileSizes:
+  - Name: Desktop
+    Value: 359680
+  Exists: 1
+--- !u!114 &2532654441373588083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/ZombieMoan3
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/ZombieMoan3
+  Guid:
+    Data1: 1325072276
+    Data2: 1208707312
+    Data3: 313781951
+    Data4: 1630860885
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2875873443369122618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Breathing
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Breathing
+  Guid:
+    Data1: 443630667
+    Data2: 1296148978
+    Data3: 233295283
+    Data4: -702636167
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3844646077229828248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +652,141 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 203154
+--- !u!114 &4677277367820998249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Shushing
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Shushing
+  Guid:
+    Data1: -195981652
+    Data2: 1318130504
+    Data3: -58046043
+    Data4: 1495085707
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4704745079520009249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/alienbattlecry
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/alienbattlecry
+  Guid:
+    Data1: -1886504275
+    Data2: 1249380602
+    Data3: 1621402259
+    Data4: -994790856
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6427693275326083228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Zombie Satisfied
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Zombie Satisfied
+  Guid:
+    Data1: 916826483
+    Data2: 1089690906
+    Data3: 1691359891
+    Data4: 1834847803
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7241958329955143030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/The Skeletonking Lives
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/The Skeletonking Lives
+  Guid:
+    Data1: 425047322
+    Data2: 1121611349
+    Data3: -1465249617
+    Data4: 1709196481
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7537017642062053344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Laser
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Laser
+  Guid:
+    Data1: -1001632170
+    Data2: 1240548627
+    Data3: 95091383
+    Data4: 2045643111
+  Banks:
+  - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8311077568645385596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,8 +802,8 @@ MonoBehaviour:
   Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637763828578222083
+  lastModified: 637773563801726068
   FileSizes:
   - Name: Desktop
-    Value: 908
+    Value: 1966
   Exists: 1

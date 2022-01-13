@@ -12,7 +12,7 @@ public abstract class Character : MonoBehaviour
 {
    // public int Frames = 0;
 
-    //[SerializeField] private int maxHealth;
+    //private int maxHealth;
     [SerializeField] private float physicalDmg;
     public float PhysicalDmg
     {

@@ -90,15 +90,18 @@ public class Drummer : Player
     }
 
     public void Attack()
-    { 
-        StartCoroutine(Attack(projectileType));
+    {
+        if (mana1.MyCurrentValue > 5)
+        {
+            StartCoroutine(Attack(projectileType));
+        }
     }
 
     public void Solo()
     {
 
        
-            if (mana1.MyCurrentValue > 0)
+            if (mana1.MyCurrentValue > 20)
         {
             StartCoroutine(Solo(projectileType));
         }
@@ -109,11 +112,14 @@ public class Drummer : Player
     public void Jam()
     {
 
-        if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
+        // if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
 
+        //  {
+        if (mana1.MyCurrentValue > 40)
         {
             StartCoroutine(Jam(projectileType));
         }
+      //  }
     }
 
    
@@ -125,7 +131,7 @@ public class Drummer : Player
     {
 
         //Creates a new spell, so that we can use the information form it to cast it in the game
-
+        mana1.MyCurrentValue -= 5;
         IsAttacking = true; //Indicates if we are attacking
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         GameObject p = GuitarShooter.GrabObject();
@@ -158,7 +164,7 @@ public class Drummer : Player
     {
         //Attack();
 
-        mana1.MyCurrentValue -= 3;
+        mana1.MyCurrentValue -= 10;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
@@ -210,11 +216,11 @@ public class Drummer : Player
 
     private IEnumerator Jam(string gonam)
     {
-
+        mana1.MyCurrentValue -= 10;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
-        isJamming = true;
+       // isJamming = true;
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         GameObject p = GuitarShooter.GrabObject();
         GameObject pp = GuitarShooter.GrabObject();

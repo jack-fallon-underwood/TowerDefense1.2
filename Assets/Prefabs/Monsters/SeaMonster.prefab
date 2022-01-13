@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 6029130626590273512}
   - component: {fileID: 5930668369088750552}
   - component: {fileID: 2208469173276874890}
+  - component: {fileID: 7314006613192729675}
   m_Layer: 9
   m_Name: SeaMonster
   m_TagString: Enemy
@@ -294,7 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f807a95e9ac3ffa48a7583df364b00b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frames: 0
   physicalDmg: 1
   magicDmg: 5
   attackSpd: 5
@@ -388,6 +388,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ObjectPooler: {fileID: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &7314006613192729675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979675665119041490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 290280358
+      Data2: 1080907204
+      Data3: -346948213
+      Data4: -555869281
+    Path: event:/SoundEffects/Fish Yell
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5979701215481565368
 GameObject:
   m_ObjectHideFlags: 0
