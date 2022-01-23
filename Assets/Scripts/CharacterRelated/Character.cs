@@ -10,7 +10,10 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public abstract class Character : MonoBehaviour
 {
-   // public int Frames = 0;
+
+    public FMODUnity.EventReference DamageEvent;
+    public FMODUnity.EventReference HealEvent;
+    // public int Frames = 0;
 
     //private int maxHealth;
     [SerializeField] private float physicalDmg;
@@ -116,6 +119,9 @@ public abstract class Character : MonoBehaviour
           return  health.MyCurrentValue > 0.1f;
         }
     }
+
+    public bool IsFreezing =false;
+
     private GameObject gameManager;
     public GameManager MyGameManager;
     protected virtual void Start()
@@ -180,8 +186,16 @@ public abstract class Character : MonoBehaviour
     {
        
             //Makes sure that the player moves
+            if(IsFreezing == true)
+        {
+            myRigidbody.velocity = MoveVector.normalized * MovementSpd*0.5f;
+        }
+
+            
+            else
+        {
             myRigidbody.velocity = MoveVector.normalized * MovementSpd;
-    
+        }
  
     }
 
@@ -258,7 +272,7 @@ public abstract class Character : MonoBehaviour
     public virtual void TakeDamage(float damage, Transform source)
     {
         health.MyCurrentValue -= damage;
-
+        FMODUnity.RuntimeManager.PlayOneShot(DamageEvent, transform.position);
 
         if (health.MyCurrentValue <= 0)
         {
@@ -269,7 +283,7 @@ public abstract class Character : MonoBehaviour
             MyAnimator.SetTrigger("die");
             if(this is Player)
             {
-               MyGameManager.GameOver();
+              // MyGameManager.GameOver();
             }
             if(this is Enemy)
             {   

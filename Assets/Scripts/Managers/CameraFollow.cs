@@ -118,7 +118,7 @@ public class CameraFollow : MonoBehaviour {
   
 
         //MIN MAX zooms for the camera
-        targetZoom = Mathf.Clamp(targetZoom, 10.8f, 11.2f);
+        targetZoom = Mathf.Clamp(targetZoom, 10.8f, 16.2f);
 
         //Chaning the actual zoom size
         //Debug.Log(cam.orthographicSize + " " + targetZoom + " " + Time.deltaTime + " " + zoomLerpSpeed);

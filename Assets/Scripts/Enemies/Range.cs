@@ -6,7 +6,7 @@ public class Range : MonoBehaviour
 {
     private Enemy parent;
 
-    private void Start()
+    private void Awake()
     {
         gameObject.layer = 3;
         parent = GetComponentInParent<Enemy>();
@@ -14,7 +14,7 @@ public class Range : MonoBehaviour
         //inn an attempt to reducce collision tags, most enemies will start with the target of their portals
         if(parent.Target != null)
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 
@@ -25,9 +25,18 @@ public class Range : MonoBehaviour
         {
             parent.SetTarget(collision.transform);
             parent.ChangeState(new FollowState());
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
 
         
+    }
+
+
+    private void Update()
+    {
+        if (parent.gameObject.activeSelf == false)
+        {
+            this.gameObject.SetActive(true);
+        }
     }
 }

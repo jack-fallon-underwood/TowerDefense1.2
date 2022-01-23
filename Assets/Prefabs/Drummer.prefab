@@ -4933,8 +4933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0303, y: -13.894}
-  m_SizeDelta: {x: 166.809, y: 70.561}
+  m_AnchoredPosition: {x: -0.0303, y: -6.8472}
+  m_SizeDelta: {x: 166.809, y: 84.654}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4588968941321429747
 CanvasRenderer:
@@ -8757,6 +8757,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94108c79df6f8746b32f46a072658f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageEvent:
+    Guid:
+      Data1: 384122290
+      Data2: 1191146836
+      Data3: 428005514
+      Data4: 1251433210
+    Path: event:/PlayerSFX/Drum1
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -8767,6 +8781,7 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 500
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   Frames: 0
   playerIndex: 0
@@ -8785,7 +8800,7 @@ MonoBehaviour:
   - {fileID: 6907960184850507316}
   - {fileID: 6908409417741752910}
   GuitarShooter: {fileID: 6903725940417551927}
-  initMana: 500
+  initMana: 250
   projectileType: 
   mySprite: {fileID: 4588968942073087626}
   myDrumExits: {fileID: 6902889643535508058}

@@ -163,6 +163,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc02ad688e5c192459b88f81b90ce094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -173,6 +187,7 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 10
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 225256324957732436}
   initAggroRange: 5

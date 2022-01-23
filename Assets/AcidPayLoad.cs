@@ -10,6 +10,7 @@ public class AcidPayLoad : MonoBehaviour
 
     [SerializeField] private int damage = 8;
     [SerializeField] private float castTime;
+    private PooledObject myDumbAssFace;
 
     //so the poison only hurts every few seconds
     private float nextActionTime = 0.0f;
@@ -32,7 +33,7 @@ public class AcidPayLoad : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        myDumbAssFace = GetComponent<PooledObject>();
     }
     public void Initialize(int damage)
     {
@@ -65,6 +66,8 @@ public class AcidPayLoad : MonoBehaviour
 
 
         yield return new WaitForSeconds(4.01f); //This is a hardcoded cast time, for debugging 
+        myDumbAssFace.ReturnToPool();
+
 
 
     }

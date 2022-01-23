@@ -295,6 +295,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f807a95e9ac3ffa48a7583df364b00b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageEvent:
+    Guid:
+      Data1: -195981652
+      Data2: 1318130504
+      Data3: -58046043
+      Data4: 1495085707
+    Path: event:/SoundEffects/Shushing
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 1
   magicDmg: 5
   attackSpd: 5
@@ -305,6 +319,7 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 125
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 5322778469884394830}
   initAggroRange: 20

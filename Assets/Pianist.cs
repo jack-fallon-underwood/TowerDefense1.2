@@ -60,11 +60,11 @@ public class Pianist : Player
         base.Update();
 
 
-        if (Actions.Attack)
+        if (Actions.Attack.WasPressed)
         { Attack(); }
-        if (Actions.Solo)
+        if (Actions.Solo.WasPressed)
         { Solo(); }
-        if (Actions.Jam)
+        if (Actions.Jam.WasPressed)
         { Jam(); }
 
 
@@ -158,7 +158,7 @@ public class Pianist : Player
     {
         //Attack();
 
-        mana1.MyCurrentValue -= 3;
+        mana1.MyCurrentValue -= 50;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking

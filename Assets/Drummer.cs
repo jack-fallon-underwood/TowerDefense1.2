@@ -49,11 +49,11 @@ public class Drummer : Player
         base.Update();
 
 
-        if (Actions.Attack)
+        if (Actions.Attack.WasPressed)
         { Attack(); }
         if (Actions.Solo)
         { Solo(); }
-        if (Actions.Jam)
+        if (Actions.Jam.WasPressed)
         { Jam(); }
 
 
@@ -131,7 +131,7 @@ public class Drummer : Player
     {
 
         //Creates a new spell, so that we can use the information form it to cast it in the game
-        mana1.MyCurrentValue -= 5;
+        mana1.MyCurrentValue -= 0;
         IsAttacking = true; //Indicates if we are attacking
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         GameObject p = GuitarShooter.GrabObject();
@@ -164,7 +164,7 @@ public class Drummer : Player
     {
         //Attack();
 
-        mana1.MyCurrentValue -= 10;
+        mana1.MyCurrentValue -= 9;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
@@ -183,7 +183,7 @@ public class Drummer : Player
         pppp.transform.rotation = currentRotationQuaternion * Quaternion.Euler(0, 0, 180f);
         ppp.transform.position = exitPoints[2].position; //keeps it firing from the back
         pppp.transform.position = exitPoints[3].position; //keeps it firing from the back
-        yield return new WaitForSeconds(0.01f); //This is a hardcoded cast time, for debugging     
+        yield return new WaitForSeconds(0.1f); //This is a hardcoded cast time, for debugging     
 
 
 
@@ -216,7 +216,7 @@ public class Drummer : Player
 
     private IEnumerator Jam(string gonam)
     {
-        mana1.MyCurrentValue -= 10;
+        mana1.MyCurrentValue -= 1;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking

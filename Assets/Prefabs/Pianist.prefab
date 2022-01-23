@@ -8461,6 +8461,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab1c67aaeb92f448b8b7a66fc3351fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageEvent:
+    Guid:
+      Data1: 1333717300
+      Data2: 1161715415
+      Data3: 740307343
+      Data4: -610213341
+    Path: event:/PlayerSFX/Piano1
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -8471,6 +8485,7 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 150
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   Frames: 0
   playerIndex: 0
@@ -8489,7 +8504,7 @@ MonoBehaviour:
   - {fileID: 7930852975391230830}
   - {fileID: 7931283359298287380}
   GuitarShooter: {fileID: 7926612251480028013}
-  initMana: 255
+  initMana: 100
   projectileType: 
   mySprite: {fileID: 1036187466091211728}
   myDrumExits: {fileID: 7928007134794288896}

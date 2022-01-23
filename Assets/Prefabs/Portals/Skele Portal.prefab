@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 1633638862308656, guid: 2ce506436045c9845a24165985931ca1,
     type: 3}
-  startingAmount: 10
-  poolSize: 10
+  startingAmount: 40
+  poolSize: 40
 --- !u!1 &243616326192996478
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +170,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4262fd29d3d541dc83dc9d4ba16ffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageEvent:
+    Guid:
+      Data1: 2079828372
+      Data2: 1292376704
+      Data3: -1185723504
+      Data4: -1443404083
+    Path: event:/SoundEffects/Bones Rule
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 0
   magicDmg: 0
   attackSpd: 0
@@ -180,6 +194,7 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 10
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 243616326536365812}
   initAggroRange: 20

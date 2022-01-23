@@ -149,7 +149,7 @@ public class LoveProjectile : MonoBehaviour
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
 
-        yield return new WaitForSeconds(4.01f); //This is a hardcoded cast time, for debugging 
+        yield return new WaitForSeconds(2.01f); //This is a hardcoded cast time, for debugging 
         Release();
 
     }

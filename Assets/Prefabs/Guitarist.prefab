@@ -251,6 +251,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38a75b1aab87a4488a6a68f998ec3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageEvent:
+    Guid:
+      Data1: 1941905438
+      Data2: 1087128942
+      Data3: -1955809895
+      Data4: -141520759
+    Path: event:/PlayerSFX/Guitar2
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
@@ -261,6 +275,7 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 125
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   Frames: 0
   playerIndex: 0
@@ -895,7 +910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 19
-  damage: 14
+  damage: 3
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &630610650239460445
@@ -1101,7 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 25
+  damage: 3
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &3894392847958841401
@@ -1277,7 +1292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 40
+  damage: 20
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &4810431516283289857

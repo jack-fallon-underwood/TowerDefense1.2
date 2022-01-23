@@ -50,7 +50,7 @@ public class Bassist : Player
         { Attack(); }
         if (Actions.Solo)
         { Solo(); }
-        if (Actions.Jam)
+        if (Actions.Jam.WasPressed)
         { Jam(); }
 
 

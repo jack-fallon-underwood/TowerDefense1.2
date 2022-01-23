@@ -69,6 +69,14 @@ public class Enemy : Character
 
     }
 
+    private void OnEnable()
+    {
+        for (int i = 2; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(true);
+        }
+    }
+
     protected override void Update()
     {
         base.Update();

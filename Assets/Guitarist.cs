@@ -62,7 +62,7 @@ public class Guitarist : Player
 
         if (Actions.Attack)
         { Attack(); }
-        if (Actions.Solo)
+        if (Actions.Solo.WasPressed)
         { Solo(); }
         if (Actions.Jam)
         { Jam(); }

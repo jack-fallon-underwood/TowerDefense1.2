@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8971442753608788393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Guitar3
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Guitar3
+  Guid:
+    Data1: -1079936980
+    Data2: 1273291419
+    Data3: -468015735
+    Data4: -745621653
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8696906194419591271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Bass3
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Bass3
+  Guid:
+    Data1: 299750105
+    Data2: 1122257726
+    Data3: 963997056
+    Data4: -1802613098
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8282026323367699790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +218,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5429243543833126100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Piano3
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Piano3
+  Guid:
+    Data1: 1252446306
+    Data2: 1081334245
+    Data3: -488368235
+    Data4: -10553926
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4870618183964000055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Bass1
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Bass1
+  Guid:
+    Data1: -1776819899
+    Data2: 1156503382
+    Data3: 1888266397
+    Data4: -1586017818
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4849709076942215408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,11 +287,38 @@ MonoBehaviour:
   Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637773563801696065
+  lastModified: 637780336062034341
   FileSizes:
   - Name: Desktop
     Value: 1808896
   Exists: 1
+--- !u!114 &-3520766640572353394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Bass2
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Bass2
+  Guid:
+    Data1: -205915684
+    Data2: 1150213328
+    Data3: -2039587910
+    Data4: -1824077290
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3498478642303752998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +373,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2348739836432821753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Drum2
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Drum2
+  Guid:
+    Data1: -1161908836
+    Data2: 1142199945
+    Data3: -325815623
+    Data4: 220135559
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1736640669794577856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Drum1
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Drum1
+  Guid:
+    Data1: 384122290
+    Data2: 1191146836
+    Data3: 428005514
+    Data4: 1251433210
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1245781646035248639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +469,7 @@ MonoBehaviour:
   Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637773564047606394
+  lastModified: 637780336063590194
   FileSizes:
   - Name: Desktop
     Value: 14219104
@@ -383,6 +572,7 @@ MonoBehaviour:
   - {fileID: -4849709076942215408}
   - {fileID: -459090432791371451}
   - {fileID: 2427762785228482564}
+  - {fileID: 9064597967470335916}
   EditorEvents:
   - {fileID: -7776812520783102894}
   - {fileID: -6385144046298915767}
@@ -409,12 +599,22 @@ MonoBehaviour:
   - {fileID: 7537017642062053344}
   - {fileID: 6427693275326083228}
   - {fileID: 4677277367820998249}
+  - {fileID: 2676233379906141141}
+  - {fileID: -8971442753608788393}
+  - {fileID: 5676354359678802054}
+  - {fileID: -4870618183964000055}
+  - {fileID: -5429243543833126100}
+  - {fileID: -2348739836432821753}
+  - {fileID: -1736640669794577856}
+  - {fileID: -8696906194419591271}
+  - {fileID: -3520766640572353394}
+  - {fileID: 1391894652652141333}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4849709076942215408}
   StringsBanks:
   - {fileID: 8311077568645385596}
-  cacheTime: 637773564048157528
+  cacheTime: 637780336067951838
   cacheVersion: 10
 --- !u!114 &311127605441112876
 MonoBehaviour:
@@ -463,6 +663,33 @@ MonoBehaviour:
     Data4: -293817498
   Banks:
   - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1391894652652141333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Piano2
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Piano2
+  Guid:
+    Data1: -486949135
+    Data2: 1214870460
+    Data3: 809143961
+    Data4: -1288913623
+  Banks:
+  - {fileID: 9064597967470335916}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -566,7 +793,7 @@ MonoBehaviour:
   Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637773564048157528
+  lastModified: 637780336064996418
   FileSizes:
   - Name: Desktop
     Value: 359680
@@ -591,6 +818,33 @@ MonoBehaviour:
     Data4: 1630860885
   Banks:
   - {fileID: 2427762785228482564}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2676233379906141141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Guitar2
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Guitar2
+  Guid:
+    Data1: 1941905438
+    Data2: 1087128942
+    Data3: -1955809895
+    Data4: -141520759
+  Banks:
+  - {fileID: 9064597967470335916}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -706,6 +960,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5676354359678802054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Piano1
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Piano1
+  Guid:
+    Data1: 1333717300
+    Data2: 1161715415
+    Data3: 740307343
+    Data4: -610213341
+  Banks:
+  - {fileID: 9064597967470335916}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6427693275326083228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,8 +1083,28 @@ MonoBehaviour:
   Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637773563801726068
+  lastModified: 637780336062064250
   FileSizes:
   - Name: Desktop
-    Value: 1966
+    Value: 2416
+  Exists: 1
+--- !u!114 &9064597967470335916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PlayerSFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Studio/TowerDefense1.2/Build/Desktop/PlayerSFX.bank
+  Name: PlayerSFX
+  StudioPath: bank:/PlayerSFX
+  lastModified: 637780336067951838
+  FileSizes:
+  - Name: Desktop
+    Value: 58304
   Exists: 1
