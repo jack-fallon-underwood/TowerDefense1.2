@@ -166,7 +166,7 @@ public class Player : Character
         dashTimer += Time.deltaTime;
         if (dashTimer >= dashDuration)
         {
-            if (Actions.Dash)
+            if (Actions.Dash.)
             {
                 Dash();
             }

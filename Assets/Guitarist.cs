@@ -163,7 +163,7 @@ public class Guitarist : Player
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
-        mana1.MyCurrentValue -= 10;
+        mana1.MyCurrentValue -= 0;
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         GameObject p = GuitarShooter.GrabObject();
         axeLaunch.SetActive(true);

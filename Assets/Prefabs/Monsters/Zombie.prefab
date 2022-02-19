@@ -351,7 +351,7 @@ MonoBehaviour:
   health: {fileID: 9038439454966809323}
   level: 5
   mySpriteRenderer2D: {fileID: 0}
-  initHealth: 10
+  initHealth: 50
   MoveVector: {x: 0, y: 0, z: 0}
   IsFreezing: 0
   MyGameManager: {fileID: 0}

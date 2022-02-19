@@ -71,7 +71,7 @@ public class Enemy : Character
 
     private void OnEnable()
     {
-        for (int i = 2; i < transform.childCount; i++)
+        for (int i = 2; i < 2.5; i++)
         {
             transform.GetChild(i).gameObject.SetActive(true);
         }
