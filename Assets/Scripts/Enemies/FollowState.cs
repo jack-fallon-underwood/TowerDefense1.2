@@ -44,6 +44,7 @@ class FollowState : IState
 
     public void Update()
     {
+   
         if (parent.MyTarget != null)//As long as we have a target, then we need to keep moving
         {
              //Find the target's direction
@@ -70,7 +71,7 @@ class FollowState : IState
         }
         if (!parent.InRange)
         {
-            parent.ChangeState(new EvadeState());
+            parent.ChangeState(new IdleState());
         } //if we don't have a target, then we need to go back to idle.
 
     }

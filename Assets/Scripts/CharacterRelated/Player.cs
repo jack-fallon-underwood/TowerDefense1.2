@@ -122,7 +122,7 @@ public class Player : Character
     protected CameraFollow mainCam;
 
 
-    private float dashTimer, dashDuration =1;
+    
 
 
     protected override void Start()
@@ -160,19 +160,7 @@ public class Player : Character
        // controls.Gameplay.Attack.performed += ctx => Attack(NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname);
     }
 
-    protected override void FixedUpdate()
-    {
-        base.FixedUpdate();
-        dashTimer += Time.deltaTime;
-        if (dashTimer >= dashDuration)
-        {
-            if (Actions.Dash.)
-            {
-                Dash();
-            }
-            dashTimer = 0;
-        }
-    }
+    
     /// <summary>
     /// We are overriding the characters update function, so that we can execute our own functions
     /// </summary>
@@ -195,14 +183,8 @@ public class Player : Character
         //moveDirection = moveDirection * MovementSpd;
         MoveVector = moveDirection;
     Move(moveDirection);
-
-
-           
+     
         base.Update();
-
-
-      
-
 
         if (Actions.Walk.X != 0 || Actions.Walk.Y != 0)
         {
@@ -214,12 +196,10 @@ public class Player : Character
         }
        
 
-        
         if(isJamming == true)
         {
             manabar.color = new Color32(255,155,0,255);
             DrainManaPool();
-
 
            if(mana1.MyCurrentValue == 0)
            {
@@ -244,11 +224,8 @@ public class Player : Character
      if (Frames % 9 == 0) { //If the remainder of the current frame divided by 10 is 0 run the function.
         //mana1.MyCurrentValue += 1;
         moveDirection = transform.position;}
-
-
-
-        
     }
+
 
     void OnDisable()
     {
@@ -258,16 +235,36 @@ public class Player : Character
         }
     }
 
+    private float dashTimer = 0, dashDuration =1;
+    private bool isDashing = false;
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        
+        
+            if (Actions.Dash && Time.time > dashTimer)
+            {
+                dashTimer = Time.time + dashDuration;
+                Dash();
+
+        isDashing = false;
+            
+            
+        }
+    }
     void Dash()
     {
-     
+        {
             StartCoroutine(DashCoroutine());
+           
+        }
 
 
     }
 
     private IEnumerator DashCoroutine()
     {
+        isDashing = true;
         float startTime = Time.time; // need to remember this to know how long to dash
         while (Time.time < startTime + 0.4f)
         {
@@ -275,7 +272,7 @@ public class Player : Character
             // or controller.Move(...), dunno about that script
             yield return null; // this will make Unity stop here and continue next frame
         }
-
+        
     }
 
     void LChangeItem()
@@ -381,7 +378,7 @@ public class Player : Character
 
         IsAttacking = false; //Makes sure that we are not attacking
 
-        MyAnimator.SetBool("attack", IsAttacking); //Stops the attack animation
+        //MyAnimator.SetBool("attack", IsAttacking); //Stops the attack animation
 
         if (attackRoutine != null) //Checks if we have a reference to an co routine
         {

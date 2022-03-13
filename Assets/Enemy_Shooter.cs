@@ -61,8 +61,10 @@ public class Enemy_Shooter : Enemy
         EvilProjectile q = p.GetComponent<EvilProjectile>();
         q.Initialize(q.MyDamage);
 
-        q.MyEvilBody.velocity = (MyTarget.position - q.transform.position);// * -1 * q.MySpeed;
-
+        if (q != null)
+        {
+            q.MyEvilBody.velocity = (MyTarget.position - q.transform.position);// * -1 * q.MySpeed;
+        }
 
         IsAttacking = false;
 

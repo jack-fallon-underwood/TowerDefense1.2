@@ -28,7 +28,7 @@ public class CharacterManager : MonoBehaviour
 
 	void Awake()
 	{
-		DontDestroyOnLoad(this.gameObject);
+		//DontDestroyOnLoad(this.gameObject);
 
 	}
 	void OnEnable()

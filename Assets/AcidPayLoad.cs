@@ -52,9 +52,12 @@ public class AcidPayLoad : MonoBehaviour
     {
         if (Time.time > nextActionTime)
         {
-            Character c = collision.GetComponentInParent<Player>();
-            c.TakeDamage(damage, this.transform);
-            nextActionTime = Time.time + period;
+            if (!collision == null)
+            {
+                Character c = collision.GetComponentInParent<Player>();
+                c.TakeDamage(damage, this.transform);
+                nextActionTime = Time.time + period;
+            }
         }
 
     }

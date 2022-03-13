@@ -8,7 +8,7 @@ public class Glut : Enemy
     private Vector3 muddy = new Vector3(9f, 9f,1f);
     private float sizeVariable;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         base.Start();
     }

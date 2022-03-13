@@ -119,15 +119,20 @@ public class Projectile : MonoBehaviour
 
         if (collision.tag == "Enemy")
         {
-            Character c = collision.GetComponentInParent<Enemy>();
-            currentSpeed = 0;
+            
+                Character c = collision.GetComponentInParent<Enemy>();
+                currentSpeed = 0;
 
-            GetComponent<Animator>().SetTrigger("Impact");
-            //Character m = GetComponentInParent<Transform.root>();
-            //myRigidBody.velocity = Vector2.zero;
-            Release();
+               // GetComponent<Animator>().SetTrigger("Impact");
+                //Character m = GetComponentInParent<Transform.root>();
+                //myRigidBody.velocity = Vector2.zero;
+                Release();
 
-            c.TakeDamage(damage, PlayerOrigin.transform);
+            if (c != null)
+            {
+                c.TakeDamage(damage, PlayerOrigin.transform);
+            }
+            
         }
         if (collision.tag == "Enemy/Boss")
         {

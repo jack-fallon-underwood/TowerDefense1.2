@@ -7,7 +7,7 @@ public class AnimorphRange : MonoBehaviour
 {
 
     private Enemy parent;
-    private GameObject parentGO;
+
     private CircleCollider2D finalCollider;
 
     private bool IsVamping = false;
@@ -16,9 +16,9 @@ public class AnimorphRange : MonoBehaviour
     private void Start()
     {
         parent = GetComponentInParent<Enemy>();
-        parentGO = GetComponentInParent<GameObject>();
+        
         //initalCollider = parent.GetComponent<PolygonCollider2D>();
-        finalCollider = parentGO.GetComponent<CircleCollider2D>();
+        finalCollider = parent.gameObject.GetComponent<CircleCollider2D>();
 
     }
 

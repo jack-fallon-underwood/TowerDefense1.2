@@ -34,7 +34,7 @@ public class Enemy : Character
     public Vector3 MyStartPosition { get; set; }
 
     [SerializeField]
-    private float initAggroRange;
+    public float initAggroRange;
 
     public float MyAggroRange { get; set; }
 

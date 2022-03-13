@@ -217,33 +217,36 @@ public abstract class Character : MonoBehaviour
     /// </summary>
     public void HandleLayers()
     {
-      
-        
-            //Checks if we are moving or standing still, if we are moving then we need to play the move animation
-            if (IsAttacking)
-            {
+
+
+        //Checks if we are moving or standing still, if we are moving then we need to play the move animation
+        if (IsAttacking)
+        {
             ActivateLayer("AttackLayer");
 
-            }
-            
-            else if (IsMoving)
-            {
+        }
+
+        else if (IsMoving)
+        {
             ActivateLayer("WalkLayer");
 
 
             //Sets the animation parameter so that he faces the correct MoveVector
-            MyAnimator.SetFloat("x", MoveVector.x);
-            MyAnimator.SetFloat("y", MoveVector.y);
-            
-            }
-            else
+           // MyAnimator.SetFloat("x", MoveVector.x);
+          //  MyAnimator.SetFloat("y", MoveVector.y);
+
+        }
+        else if(!IsMoving)
             {
-                //Makes sure that we will go back to idle when we aren't pressing any keys.
-                ActivateLayer("IdleLayer");
-            }
-            
-      //  else
-      //  {
+            //Makes sure that we will go back to idle when we aren't pressing any keys.
+            // ActivateLayer("BaseLayer");
+            ActivateBaseLayer();
+        }
+
+       
+       else
+        {  }
+       // {
        //     ActivateLayer("DeathLayer");
        // }
 
@@ -265,6 +268,17 @@ public abstract class Character : MonoBehaviour
        MyAnimator.SetLayerWeight(MyAnimator.GetLayerIndex(layerName),1);
     }
 
+    public void ActivateBaseLayer()
+    {
+        for (int i = 1; i < MyAnimator.layerCount; i++)
+        {
+            MyAnimator.SetLayerWeight(i, 0);
+
+            
+        }
+        MyAnimator.SetLayerWeight(0, 1);
+    }
+
     /// <summary>
     /// Makes the character take damage
     /// </summary>
@@ -280,7 +294,7 @@ public abstract class Character : MonoBehaviour
        //     MoveVector = Vector3.zero;
       //myRigidbody.velocity = MoveVector;
 //            SoundManager.Instance.PlaySFX("Splat");
-            MyAnimator.SetTrigger("die");
+           // MyAnimator.SetTrigger("die");
             if(this is Player)
             {
               // MyGameManager.GameOver();

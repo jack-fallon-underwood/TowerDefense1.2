@@ -50,10 +50,11 @@ public class ShockPayload : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       
+        if (!collision == null)
+        {
             Character c = collision.GetComponentInParent<Player>();
             c.TakeDamage(damage, this.transform);
-            
+        }
 
     }
 

@@ -123,7 +123,7 @@ public class EvilProjectile : MonoBehaviour
             Character c = collision.GetComponentInParent<Player>();
             currentSpeed = 0;
 
-            GetComponent<Animator>().SetTrigger("Impact");
+          //  GetComponent<Animator>().SetTrigger("Impact");
             //Character m = GetComponentInParent<Transform.root>();
             //myRigidBody.velocity = Vector2.zero;
             Release();
@@ -136,7 +136,7 @@ public class EvilProjectile : MonoBehaviour
             Character c = collision.GetComponentInParent<Enemy>();
             currentSpeed = 0;
 
-            GetComponent<Animator>().SetTrigger("Impact");
+           //GetComponent<Animator>().SetTrigger("Impact");
             //Character m = GetComponentInParent<Transform.root>();
             //myRigidBody.velocity = Vector2.zero;
             Release();
@@ -160,7 +160,7 @@ public class EvilProjectile : MonoBehaviour
 
             currentSpeed = 0;
 
-            GetComponent<Animator>().SetTrigger("Impact");
+           // GetComponent<Animator>().SetTrigger("Impact");
            
             Release();
         }

@@ -88,7 +88,7 @@ public class Boss : Enemy
           yield return new WaitForSeconds(2.25f); //This is a hardcoded cast time, for debugging 
         EvilProjectile q = p.GetComponent<EvilProjectile>();
         q.Initialize(q.MyDamage);
-        Debug.Log(q.MyEvilBody);
+
         q.MyEvilBody.velocity = (MyTarget.position - q.transform.position );// * -1 * q.MySpeed;
         EvilProjectile qq = pp.GetComponent<EvilProjectile>();
         qq.PlayerOrigin = 1;

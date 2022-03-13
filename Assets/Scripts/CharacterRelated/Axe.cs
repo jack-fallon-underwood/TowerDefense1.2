@@ -88,7 +88,7 @@ public class Axe : MonoBehaviour
             Character c = collision.GetComponentInParent<Enemy>();
   
 
-            GetComponent<Animator>().SetTrigger("Impact");
+           // GetComponent<Animator>().SetTrigger("Impact");
             //Character m = GetComponentInParent<Transform.root>();
             //myRigidBody.velocity = Vector2.zero;
 

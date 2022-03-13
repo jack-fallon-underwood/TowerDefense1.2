@@ -48,10 +48,11 @@ public class tntPayLoad : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        Character c = collision.GetComponentInParent<Player>();
-        c.TakeDamage(damage, this.transform);
-
+        if (!collision == null)
+        {
+            Character c = collision.GetComponentInParent<Player>();
+            c.TakeDamage(damage, this.transform);
+        }
 
     }
 

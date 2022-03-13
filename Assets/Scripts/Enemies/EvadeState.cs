@@ -18,11 +18,12 @@ public class EvadeState : IState
     public void Exit()
     {
         parent.MoveVector = Vector3.zero;
-        parent.Reset();
+       // parent.Reset();
     }
 
     public void Update()
     {
+        Debug.Log("evading");
         //Makes sure that we can run back to the original position when we are evading
         //This needs to be improved later so that we can use pathfinding
         parent.MoveVector = (parent.MyStartPosition - parent.transform.position).normalized;

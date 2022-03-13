@@ -19,7 +19,8 @@ class IdleState : IState
     {
         this.parent = parent;
     
-        this.parent.Reset();
+        this.parent.MyTarget = null;
+        this.parent.MyAggroRange = this.parent.initAggroRange;
     }
 
     /// <summary>

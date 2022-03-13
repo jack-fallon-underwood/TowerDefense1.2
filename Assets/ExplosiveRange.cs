@@ -7,7 +7,7 @@ public class ExplosiveRange : MonoBehaviour
 {
 
     private Kamikazee parent;
-    private GameObject parentGO;
+
 
 
 
@@ -15,7 +15,7 @@ public class ExplosiveRange : MonoBehaviour
     private void Start()
     {
         parent = GetComponentInParent<Kamikazee>();
-        parentGO = GetComponentInParent<GameObject>();
+        
 
 
 

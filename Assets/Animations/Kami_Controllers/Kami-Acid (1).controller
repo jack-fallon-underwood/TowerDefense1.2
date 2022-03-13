@@ -11,7 +11,7 @@ AnimatorController:
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: WalkLayer
     m_StateMachine: {fileID: 785214276623318824}
     m_Mask: {fileID: 0}
     m_Motions: []
@@ -55,7 +55,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: WalkLayer
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 561652000981869192}
