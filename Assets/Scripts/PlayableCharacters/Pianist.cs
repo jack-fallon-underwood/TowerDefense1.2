@@ -23,6 +23,8 @@ public class Pianist : Player
     [SerializeField] protected ObjectPooler HealthShooter;
     [SerializeField] protected ObjectPooler JamShooter;
 
+    protected float CharacterSpecificJamThreshold=10;
+
 
     protected override void Start()
     {
@@ -115,8 +117,8 @@ public class Pianist : Player
     public void Jam()
     {
 
-        if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
-
+        //if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
+        if(JamReady==true)
         {
             if (isStrumming == false)
             {
@@ -222,7 +224,7 @@ public class Pianist : Player
 
     private IEnumerator Jam(string gonam)
     {
-
+        exp1.MyCurrentValue = 0;
         isJamming = true;
         isStrumming = true;
         IsAttacking = true; //Indicates if we are attacking
@@ -232,12 +234,13 @@ public class Pianist : Player
         q.Initialize(q.MyDamage);
         pianoBurst.SetActive(true);
         myBurst.PlayerOrigin = this;
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.8f);
 
 
        
             pianoBurst.SetActive(false);
             isStrumming = false;
+             JamReady = false;
             StopAttack(); //Ends the
         
     }

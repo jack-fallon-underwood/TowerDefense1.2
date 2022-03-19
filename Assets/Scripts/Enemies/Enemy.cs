@@ -50,6 +50,8 @@ public class Enemy : Character
     }
 
     protected PooledObject myDumbAssFace;
+
+    public Player LastPersonToHitMe;
     protected virtual void Awake()
     {   
         
@@ -111,7 +113,8 @@ public class Enemy : Character
 
         if (!(IsAlive))
         {
-           
+
+            LastPersonToHitMe.P1(1);
             myDumbAssFace.ReturnToPool();
             health.MyCurrentValue = initHealth;
             Reset();

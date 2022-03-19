@@ -285,9 +285,14 @@ public abstract class Character : MonoBehaviour
     /// <param name="damage"></param>
     public virtual void TakeDamage(float damage, Transform source)
     {
+        if(this is Enemy)
+        {
+            Enemy e = GetComponent<Enemy>();
+            e.LastPersonToHitMe = source.GetComponentInParent<Player>();
+        }
         health.MyCurrentValue -= damage;
         FMODUnity.RuntimeManager.PlayOneShot(DamageEvent, transform.position);
-
+        
         if (health.MyCurrentValue <= 0)
         {
             //Makes sure that the character stops moving when its dead
@@ -301,7 +306,8 @@ public abstract class Character : MonoBehaviour
             }
             if(this is Enemy)
             {   
-                // Player p = source.GetComponentInParent<Player>();
+               // Player p = source.GetComponentInParent<Player>();
+               // p.P1(1);
                 // //PooledObject Fishyswim = GetComponent<PooledObject>();
 
                 // switch(p.playerNumber)

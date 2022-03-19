@@ -2814,7 +2814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statValue: {fileID: 0}
-  lerpSpeed: 0
+  lerpSpeed: 10
 --- !u!1 &1036187465885996858
 GameObject:
   m_ObjectHideFlags: 0

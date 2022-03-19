@@ -268,7 +268,7 @@ MonoBehaviour:
   physicalDmg: 5
   magicDmg: 5
   attackSpd: 5
-  movementSpd: 6
+  movementSpd: 7
   hitBox: {fileID: 0}
   health: {fileID: 7165509130219733045}
   level: 1
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 19
-  damage: 3
+  damage: 6
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &630610650239460445
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 3
+  damage: 6
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &3894392847958841401
@@ -1292,7 +1292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 20
+  damage: 50
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &4810431516283289857
@@ -8212,7 +8212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statValue: {fileID: 0}
-  lerpSpeed: 0
+  lerpSpeed: 10
 --- !u!1 &7165509130445761710
 GameObject:
   m_ObjectHideFlags: 0

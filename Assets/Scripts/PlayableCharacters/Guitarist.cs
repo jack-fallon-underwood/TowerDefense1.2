@@ -23,6 +23,7 @@ public class Guitarist : Player
     private Axe myBoom;
     private bool isStrumming;
 
+    protected float CharacterSpecificJamThreshold=50;
     protected string NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname;
 
     /// <summary>
@@ -124,8 +125,8 @@ public class Guitarist : Player
     public void Jam()
     {
 
-        if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
-
+       // if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
+        if(JamReady==true && !isJamming)
         {
             if (isStrumming == false)
             {
@@ -193,19 +194,20 @@ public class Guitarist : Player
     private IEnumerator Jam(string gonam)
     {
 
-        
+        exp1.MyCurrentValue = 0;
         isJamming = true;
         isStrumming = true;
         IsAttacking = true; //Indicates if we are attacking
        // MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         axeBoom.SetActive(true);
         myBoom.PlayerOrigin = this;
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.71f);
 
 
 
         axeBoom.SetActive(false);
         isStrumming = false;
+         JamReady = false;
         StopAttack(); //Ends the attack
 
     }

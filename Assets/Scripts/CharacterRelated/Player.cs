@@ -29,7 +29,7 @@ public class Player : Character
     public int GetPlayerIndex()
     {
         return playerIndex;
-        playerName = playerIndex.ToString();
+        //playerName = playerIndex.ToString();
     }
 
     protected string NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname;
@@ -60,7 +60,9 @@ public class Player : Character
     
 
     [SerializeField]
-    private Stat exp1;
+    protected Stat exp1;
+
+    protected float CharacterSpecificJamThreshold;
 
     //[SerializeField]
    // private Text levelText;
@@ -85,6 +87,7 @@ public class Player : Character
     /// </summary>
     [SerializeField] private float initMana = 50;
     private Image manabar;
+    private Image exp1bar;
 
     [SerializeField] protected string projectileType;
 
@@ -105,6 +108,8 @@ public class Player : Character
     }
 
     protected bool isJamming = false;
+
+    protected bool JamReady = false;
 
     protected Vector3 min, max, moveDirection = Vector3.zero;
     protected Vector2 currentRoration;
@@ -144,7 +149,10 @@ public class Player : Character
 
       mana1.Initialize(initMana, initMana);
       manabar = mana1.GetComponent<Image>();
-    //    exp1.Initialize(0, Mathf.Floor(100*MyLevel*Mathf.Pow(MyLevel, 0.5f)));
+      
+       exp1.Initialize(0, Mathf.Floor(14));//*MyLevel*Mathf.Pow(MyLevel, 0.5f)));
+       //exp1.MyCurrentValue = 0;
+       exp1bar = exp1.GetComponent<Image>();
      //   levelText.text = MyLevel.ToString();
         base.Start();
         PlayerPanelDestination = GameObject.Find("PlayerPanels");//.GetComponent<GameObject>();
@@ -196,23 +204,29 @@ public class Player : Character
         }
        
 
-        if(isJamming == true)
+        if(exp1.MyCurrentValue == exp1.MyMaxValue)
         {
-            manabar.color = new Color32(255,155,0,255);
-            DrainManaPool();
+            JamReady = true;
+            exp1bar.color = new Color32(255,155,0,255);
 
-           if(mana1.MyCurrentValue == 0)
-           {
-               isJamming = false;
-                manabar.color = new Color32(26,75,228,255);
-           }
+        }
+        // if(isJamming == true)
+        // {
+        //     manabar.color = new Color32(255,155,0,255);
+        //     DrainManaPool();
+
+        //    if(mana1.MyCurrentValue == 0)
+        //    {
+        //        isJamming = false;
+        //         manabar.color = new Color32(26,75,228,255);
+        //    }
             
-        }
+        // }
        
-        if(isJamming == false)
-        {
+        // if(isJamming == false)
+        // {
             FillManaPool();
-        }
+        // }
       
 
         
@@ -239,6 +253,12 @@ public class Player : Character
     private bool isDashing = false;
     protected override void FixedUpdate()
     {
+        if(Actions.LB.IsPressed)
+        {   
+            
+            MoveVector = Vector3.zero;
+        }
+
         base.FixedUpdate();
         
         
@@ -251,6 +271,8 @@ public class Player : Character
             
             
         }
+
+        
     }
     void Dash()
     {
@@ -343,16 +365,18 @@ public class Player : Character
 
 
 
-    public void P1(int xp)
+    public void P1(float xp)
     {
     exp1.MyCurrentValue += xp;
 
-    if (exp1.MyCurrentValue >= exp1.MyMaxValue)
-    {
-        StartCoroutine(Ding());
 
-    }}
+   //// if (exp1.MyCurrentValue >= exp1.MyMaxValue)
+  //  {
+   //     StartCoroutine(Ding());
 
+   }//}
+
+ 
     private IEnumerator Ding()
     {
         while (!exp1.IsFull)

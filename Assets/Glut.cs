@@ -29,7 +29,7 @@ public class Glut : Enemy
     {
 
        sizeVariable = health.MyCurrentValue / initHealth;
-        health.MyCurrentValue += 0.5f;
+        health.MyCurrentValue += 0.35f;
        muddy = new Vector3(3.0f * sizeVariable, 3.0f * sizeVariable, 1);
        this.transform.localScale = muddy;
     

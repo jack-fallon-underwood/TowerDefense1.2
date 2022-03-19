@@ -15,9 +15,9 @@ public class Drummer : Player
 {
 
     [SerializeField] private GameObject getoffme;
-    private Axe mygetoffme;
+    private GetOffMe mygetoffme;
 
-
+    protected float CharacterSpecificJamThreshold = 20;
 
     /// <summary>
     /// Index that keeps track of which exit point to use, 2 is default down
@@ -36,7 +36,7 @@ public class Drummer : Player
     {
         
         base.Awake();
-        mygetoffme = getoffme.GetComponent<Axe>();
+        mygetoffme = getoffme.GetComponent<GetOffMe>();
     }
 
     /// <summary>
@@ -111,9 +111,10 @@ public class Drummer : Player
         // if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
 
         //  {
-        if (mana1.MyCurrentValue > 40)
+       // if (mana1.MyCurrentValue > 40)
+        if(JamReady==true)
         {
-            StartCoroutine(Jam(projectileType));
+           StartCoroutine(Jam(projectileType));
             StartCoroutine(GetOffMe(projectileType));
         }
       //  }
@@ -255,19 +256,22 @@ public class Drummer : Player
 
     private IEnumerator GetOffMe (string gonam)
     {
+        exp1.MyCurrentValue = 0;
         getoffme.SetActive(true);
+        
         mygetoffme.PlayerOrigin = this;
-        yield return new WaitForSeconds(0.31f); //This is a hardcoded cast time, for debugging   
+        yield return new WaitForSeconds(8f); //This is a hardcoded cast time, for debugging   
         getoffme.SetActive(false);
+        JamReady = false;
     }
     private IEnumerator Jam(string gonam)
     {
         //mana1.MyCurrentValue -= 1;
         //Creates a new spell, so that we can use the information form it to cast it in the game
-
+        
         IsAttacking = true; //Indicates if we are attacking
         isJamming = true;
-        MoveVector = Vector3.zero;
+        //MoveVector = Vector3.zero;
         
         
        // MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation

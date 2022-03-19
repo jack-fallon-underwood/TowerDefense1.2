@@ -18,7 +18,7 @@ public class Bassist : Player
     private Axe myHit;
     private Axe mySwing;
 
-
+    protected float CharacterSpecificJamThreshold=10;
 
     protected override void Start()
     {
@@ -111,8 +111,8 @@ public class Bassist : Player
     public void Jam()
     {
 
-        if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
-
+        //if (isJamming == true || (mana1.MyCurrentValue / mana1.MyMaxValue) > 0.95f)
+        if(JamReady==true)
         {
             StartCoroutine(Jam(projectileType));
         }
@@ -163,12 +163,16 @@ public class Bassist : Player
 
     private IEnumerator Jam(string gonam)
     {
-
+        exp1.MyCurrentValue = 0;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
         isJamming = true;
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
+
+        for(int i = 0; i <= 7; i++)
+        {
+       
         GameObject p = GuitarShooter.GrabObject();
         axeSwing.SetActive(true);
         mySwing.PlayerOrigin = this;
@@ -187,9 +191,9 @@ public class Bassist : Player
         q.MyBody.velocity = currentRoration * q.MySpeed;
         axeSwing.SetActive(false);
 
+        }
 
-
-
+         JamReady = false;
 
         StopAttack(); //Ends the attack
     }
