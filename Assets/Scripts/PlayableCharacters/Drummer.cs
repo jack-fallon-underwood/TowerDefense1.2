@@ -87,17 +87,17 @@ public class Drummer : Player
 
     public void Attack()
     {
-        if (mana1.MyCurrentValue > 5)
-        {
+        //if (mana1.MyCurrentValue > 5)
+      //  {
             StartCoroutine(Attack(projectileType));
-        }
+       // }
     }
 
     public void Solo()
     {
 
        
-            if (mana1.MyCurrentValue > 20)
+            if (mana1.MyCurrentValue > 1)
         {
             StartCoroutine(Solo(projectileType));
         }
@@ -162,7 +162,7 @@ public class Drummer : Player
     {
         //Attack();
 
-       // mana1.MyCurrentValue -= 9;
+        mana1.MyCurrentValue -= 2;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
@@ -260,7 +260,7 @@ public class Drummer : Player
         getoffme.SetActive(true);
         
         mygetoffme.PlayerOrigin = this;
-        yield return new WaitForSeconds(8f); //This is a hardcoded cast time, for debugging   
+        yield return new WaitForSeconds(4f); //This is a hardcoded cast time, for debugging   
         getoffme.SetActive(false);
         JamReady = false;
     }

@@ -5596,9 +5596,11 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 200
   MoveVector: {x: 0, y: 0, z: 0}
+  isInvincable: 0
   IsFreezing: 0
   MyGameManager: {fileID: 0}
   Frames: 0
+  manaRefillFactor: 0.05
   playerIndex: 0
   playerName: Ben
   endurance: 10
@@ -6305,7 +6307,7 @@ GameObject:
   - component: {fileID: 6107937622144752116}
   m_Layer: 0
   m_Name: Axe_Swing
-  m_TagString: Untagged
+  m_TagString: Reflector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6433,7 +6435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 16
+  damage: 40
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!1 &6452869897495337833
@@ -8928,7 +8930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 8
+  damage: 50
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!61 &8197541540948080206
@@ -8941,7 +8943,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1997757, y: 0.8422241}

@@ -10,15 +10,15 @@ GameObject:
   m_Component:
   - component: {fileID: 4716052969233022736}
   - component: {fileID: 7852090873748207801}
-  - component: {fileID: 9094262965505120466}
   - component: {fileID: -7049960404749490464}
   - component: {fileID: 6181374145850641489}
   - component: {fileID: 1640050418427590859}
   - component: {fileID: 8931154053778059951}
   - component: {fileID: 4624039960312797281}
   - component: {fileID: 8261714146094118053}
+  - component: {fileID: 3995707882051823813}
   m_Layer: 0
-  m_Name: FireProjectile
+  m_Name: DrumStick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,22 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9094262965505120466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4796166743505922624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5274541522ec4117898c9dd5a91eb97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSpeed: 4
-  damage: 2
-  castTime: 1
-  PlayerOrigin: {fileID: 0}
 --- !u!61 &-7049960404749490464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -215,3 +199,20 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 3, y: 3}
   m_UseGraphicAlpha: 1
+--- !u!114 &3995707882051823813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4796166743505922624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5274541522ec4117898c9dd5a91eb97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSpeed: 4
+  damage: 2
+  castTime: 1
+  PlayerOrigin: {fileID: 0}
+  decay_value: 0.41

@@ -48,8 +48,13 @@ public class Bassist : Player
 
         if (Actions.Attack)
         { Attack(); }
-        if (Actions.Solo)
+        if (Actions.Solo.WasReleased)
+        {
+            StopSolo();
+        }
+        if (Actions.Solo.IsPressed)
         { Solo(); }
+        
         if (Actions.Jam.WasPressed)
         { Jam(); }
 
@@ -99,10 +104,13 @@ public class Bassist : Player
 
         if (IsAttacking == false)
         {
-            if (mana1.MyCurrentValue > 0)
+            if (mana1.MyCurrentValue > 10)
             {
                 StartCoroutine(Solo(projectileType));
             }
+
+            else{StopSolo();}
+
         }
     }
 
@@ -145,21 +153,28 @@ public class Bassist : Player
 
     private IEnumerator Solo(string gotname)
     {
-        mana1.MyCurrentValue -= 4;
-        
-        IsAttacking = true; //Indicates if we are attacking
+        mana1.MyCurrentValue -= 1;
+        isInvincable = true;
+        //IsAttacking = true; //Indicates if we are attacking
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
         axeHit.SetActive(true);
         myHit.PlayerOrigin = this;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.50f);
 
 
-        axeHit.SetActive(false);
-
-        StopAttack(); //Ends the attack
+        
 
 
     }
+
+    private void StopSolo()
+    {
+        axeHit.SetActive(false);
+        isInvincable = false;
+        //StopCoroutine(Solo(string gotname));
+    }
+
+
 
     private IEnumerator Jam(string gonam)
     {
@@ -170,7 +185,7 @@ public class Bassist : Player
         isJamming = true;
         MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
 
-        for(int i = 0; i <= 7; i++)
+        for(int i = 0; i <= 5; i++)
         {
        
         GameObject p = GuitarShooter.GrabObject();

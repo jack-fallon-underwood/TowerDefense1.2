@@ -106,7 +106,7 @@ public class Pianist : Player
     {
 
 
-        if (mana1.MyCurrentValue > 0)
+        if (mana1.MyCurrentValue > 9)
         {
             StartCoroutine(Solo(projectileType));
         }
@@ -195,7 +195,7 @@ public class Pianist : Player
     private IEnumerator Solo(string gotname)
     {
 
-        mana1.MyCurrentValue -= 50;
+        mana1.MyCurrentValue -= 10;
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         IsAttacking = true; //Indicates if we are attacking
@@ -226,6 +226,7 @@ public class Pianist : Player
     {
         exp1.MyCurrentValue = 0;
         isJamming = true;
+        MyHealth.MyCurrentValue += 25;
         isStrumming = true;
         IsAttacking = true; //Indicates if we are attacking
        // MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation

@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
     private Vector2 direction;
     private float attackspeed;
     [SerializeField] private float currentSpeed;
-    [SerializeField] private int damage = 8;
+    [SerializeField] protected int damage = 8;
     [SerializeField] private float castTime;
     public Player PlayerOrigin;
     private string noidea;
@@ -69,6 +69,8 @@ public class Projectile : MonoBehaviour
 
         
    }
+
+   [SerializeField] private float decay_value = 2.01f;
 
 
     //for reflections
@@ -159,13 +161,13 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private IEnumerator Decay(string nounderstand)
+    protected IEnumerator Decay(string nounderstand)
     {
 
         //Creates a new spell, so that we can use the information form it to cast it in the game
 
         
-        yield return new WaitForSeconds(2.01f); //This is a hardcoded cast time, for debugging 
+        yield return new WaitForSeconds(decay_value); //This is a hardcoded cast time, for debugging 
         Release();
 
     }

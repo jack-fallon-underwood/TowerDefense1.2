@@ -58,6 +58,7 @@ public class Enemy_Shooter : Enemy
         p.transform.position = exitPoints[0].position; //keeps it firing from the front
         p.transform.SetParent(this.transform);
         yield return new WaitForSeconds(3.00f); //This is a hardcoded cast time, for debugging 
+    
         EvilProjectile q = p.GetComponent<EvilProjectile>();
         q.Initialize(q.MyDamage);
 

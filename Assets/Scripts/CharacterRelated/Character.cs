@@ -111,7 +111,7 @@ public abstract class Character : MonoBehaviour
 
     public Vector3 MoveVector;
    
-
+    public bool isInvincable = false;
     public bool IsAlive
     {
         get
@@ -285,6 +285,7 @@ public abstract class Character : MonoBehaviour
     /// <param name="damage"></param>
     public virtual void TakeDamage(float damage, Transform source)
     {
+        if(!isInvincable){
         if(this is Enemy)
         {
             Enemy e = GetComponent<Enemy>();
@@ -339,6 +340,7 @@ public abstract class Character : MonoBehaviour
                 //Fishyswim.ReturnToPool();
 
             }
+        }
         }
     }
 }

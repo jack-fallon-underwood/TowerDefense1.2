@@ -114,7 +114,7 @@ public class Guitarist : Player
     {
 
 
-        if (mana1.MyCurrentValue > 26)
+        if (mana1.MyCurrentValue > 0)
         {
             StartCoroutine(Solo(projectileType));
         }
@@ -194,7 +194,7 @@ public class Guitarist : Player
     private IEnumerator Jam(string gonam)
     {
 
-        exp1.MyCurrentValue = 0;
+        
         isJamming = true;
         isStrumming = true;
         IsAttacking = true; //Indicates if we are attacking
@@ -208,6 +208,7 @@ public class Guitarist : Player
         axeBoom.SetActive(false);
         isStrumming = false;
          JamReady = false;
+         exp1.MyCurrentValue = 0;
         StopAttack(); //Ends the attack
 
     }

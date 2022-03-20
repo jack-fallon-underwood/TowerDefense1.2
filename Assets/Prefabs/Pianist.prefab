@@ -8472,6 +8472,7 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 200
   MoveVector: {x: 0, y: 0, z: 0}
+  isInvincable: 0
   IsFreezing: 0
   MyGameManager: {fileID: 0}
   Frames: 0

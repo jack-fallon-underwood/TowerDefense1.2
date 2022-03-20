@@ -21,7 +21,7 @@ public class Player : Character
     /// </summary>
     private Vector2 InputVector;
 
-
+    [SerializeField] private float manaRefillFactor = 1;
 
     public int playerIndex;
     public string playerName;
@@ -65,7 +65,7 @@ public class Player : Character
     protected float CharacterSpecificJamThreshold;
 
     //[SerializeField]
-   // private Text levelText;
+    // private Text levelText;
 
 
 
@@ -210,6 +210,11 @@ public class Player : Character
             exp1bar.color = new Color32(255,155,0,255);
 
         }
+
+        else
+        {
+            
+        }
         // if(isJamming == true)
         // {
         //     manabar.color = new Color32(255,155,0,255);
@@ -315,8 +320,8 @@ public class Player : Character
 
     private void FillManaPool()
     {
-         if (Frames % 20 == 0) { //If the remainder of the current frame divided by 20 is 0 run the function.
-        mana1.MyCurrentValue += 1;
+         if (Frames % 60 == 0) { //If the remainder of the current frame divided by 20 is 0 run the function.
+        mana1.MyCurrentValue += manaRefillFactor;
 
         }
     }
