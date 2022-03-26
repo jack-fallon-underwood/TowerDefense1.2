@@ -12,6 +12,7 @@ public class AnimorphRange : MonoBehaviour
 
     private bool IsVamping = false;
     [SerializeField] private int newSpeed;
+    [SerializeField] private int newHealth;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class AnimorphRange : MonoBehaviour
             IsVamping = true;
             parent.SetTarget(collision.transform);
             parent.MovementSpd = newSpeed;
+            parent.MyHealth.MyCurrentValue = newHealth;
             parent.ActivateLayer("VampLayer");
             parent.MyAnimator.SetBool("vamping", IsVamping);
             this.finalCollider.enabled = true;

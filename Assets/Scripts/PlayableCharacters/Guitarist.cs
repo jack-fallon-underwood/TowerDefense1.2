@@ -17,6 +17,8 @@ public class Guitarist : Player
     [SerializeField] private GameObject axeSpinR;
     [SerializeField] private GameObject axeLaunch;
     [SerializeField] private GameObject axeBoom;
+    [SerializeField] private GameObject axeSwing;
+    private Axe mySwing;
     private Axe mySpinL;
     private Axe mySpinR;
     private Axe myLaunch;
@@ -47,6 +49,7 @@ public class Guitarist : Player
         mySpinR = axeSpinR.GetComponent<Axe>();
         myLaunch = axeLaunch.GetComponent<Axe>(); 
         myBoom = axeBoom.GetComponent<Axe>();
+        mySwing = axeSwing.GetComponent<Axe>();
     }
 
     /// <summary>
@@ -63,7 +66,7 @@ public class Guitarist : Player
 
         if (Actions.Attack)
         { Attack(); }
-        if (Actions.Solo.WasPressed)
+        if (Actions.Solo)
         { Solo(); }
         if (Actions.Jam)
         { Jam(); }
@@ -114,7 +117,7 @@ public class Guitarist : Player
     {
 
 
-        if (mana1.MyCurrentValue > 0)
+        if (IsAttacking == false)
         {
             StartCoroutine(Solo(projectileType));
         }
@@ -159,37 +162,57 @@ public class Guitarist : Player
 
     }
 
-    private IEnumerator Solo(string gotname)
+    private IEnumerator Solo(string goname)
     {
-        //Creates a new spell, so that we can use the information form it to cast it in the game
+
+   
+       
 
         IsAttacking = true; //Indicates if we are attacking
-        mana1.MyCurrentValue -= 0;
-      //  MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
-        GameObject p = GuitarShooter.GrabObject();
-        axeLaunch.SetActive(true);
-        myLaunch.PlayerOrigin = this;
-        //  totems have no practical use in the dreeam
-        p.transform.rotation = currentRotationQuaternion;
+//        MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
+        axeSwing.SetActive(true);
 
-        p.transform.position = exitPoints[0].position; //keeps it firing from the front
-
-        yield return new WaitForSeconds(0.1f); //This is a hardcoded cast time, for debugging     
+        mySwing.PlayerOrigin = this;
+        yield return new WaitForSeconds(0.25f);
 
 
 
-        Projectile q = p.GetComponent<Projectile>();
-        q.PlayerOrigin = this;
-        q.Initialize(q.MyDamage);
-        q.MyBody.velocity = currentRoration * q.MySpeed;
-        axeLaunch.SetActive(false);
-
-
-
-
+        axeSwing.SetActive(false);
 
         StopAttack(); //Ends the attack
     }
+
+    // private IEnumerator Solo(string gotname)
+    // {
+    //     //Creates a new spell, so that we can use the information form it to cast it in the game
+
+    //     IsAttacking = true; //Indicates if we are attacking
+    //     mana1.MyCurrentValue -= 0;
+    //   //  MyAnimator.SetBool("attack", IsAttacking); //Starts the attack animation
+    //     GameObject p = GuitarShooter.GrabObject();
+    //     axeLaunch.SetActive(true);
+    //     myLaunch.PlayerOrigin = this;
+    //     //  totems have no practical use in the dreeam
+    //     p.transform.rotation = currentRotationQuaternion;
+
+    //     p.transform.position = exitPoints[0].position; //keeps it firing from the front
+
+    //     yield return new WaitForSeconds(0.1f); //This is a hardcoded cast time, for debugging     
+
+
+
+    //     Projectile q = p.GetComponent<Projectile>();
+    //     q.PlayerOrigin = this;
+    //     q.Initialize(q.MyDamage);
+    //     q.MyBody.velocity = currentRoration * q.MySpeed;
+    //     axeLaunch.SetActive(false);
+
+
+
+
+
+    //     StopAttack(); //Ends the attack
+    // }
 
     private IEnumerator Jam(string gonam)
     {

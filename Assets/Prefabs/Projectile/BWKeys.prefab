@@ -102,9 +102,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 4
-  damage: 15
+  damage: 26
   castTime: 1
   PlayerOrigin: {fileID: 0}
+  decay_value: 2.01
 --- !u!61 &3879046771577691265
 BoxCollider2D:
   m_ObjectHideFlags: 0

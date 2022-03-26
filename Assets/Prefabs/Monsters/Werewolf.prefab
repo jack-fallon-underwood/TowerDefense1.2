@@ -338,10 +338,12 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 50
   MoveVector: {x: 0, y: 0, z: 0}
+  isInvincable: 0
   IsFreezing: 0
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 7179921341288502154}
   initAggroRange: 10
+  LastPersonToHitMe: {fileID: 0}
 --- !u!114 &3232353748366829494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,6 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSpeed: 2
+  newHealth: 150
 --- !u!58 &7503652625878798194
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -7987,7 +7987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSpeed: 0
-  damage: 16
+  damage: 26
   castTime: 0
   PlayerOrigin: {fileID: 0}
 --- !u!58 &946482774229766470
@@ -8476,6 +8476,7 @@ MonoBehaviour:
   IsFreezing: 0
   MyGameManager: {fileID: 0}
   Frames: 0
+  manaRefillFactor: 0.2
   playerIndex: 0
   playerName: 
   endurance: 5
