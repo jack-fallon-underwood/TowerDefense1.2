@@ -12,17 +12,16 @@ using InControl;
 /// </summary>
 public class Player : Character
 {
-     public PlayerActions Actions { get; set; }
-   // public PlayerActions Actions { get; set; }
-    // private CharacterController characterController;
+    public int Frames = 0;
+    public PlayerActions Actions { get; set; }
 
-    //PlayerControls controls;
 
     /// <summary>
     /// The Player's InputVecor;
     /// </summary>
     private Vector2 InputVector;
 
+    [SerializeField] private float manaRefillFactor = 1;
 
     public int playerIndex;
     public string playerName;
@@ -30,7 +29,7 @@ public class Player : Character
     public int GetPlayerIndex()
     {
         return playerIndex;
-        playerName = playerIndex.ToString();
+        //playerName = playerIndex.ToString();
     }
 
     protected string NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname;
@@ -61,10 +60,12 @@ public class Player : Character
     
 
     [SerializeField]
-    private Stat exp1;
+    protected Stat exp1;
+
+    protected float CharacterSpecificJamThreshold;
 
     //[SerializeField]
-   // private Text levelText;
+    // private Text levelText;
 
 
 
@@ -86,6 +87,7 @@ public class Player : Character
     /// </summary>
     [SerializeField] private float initMana = 50;
     private Image manabar;
+    private Image exp1bar;
 
     [SerializeField] protected string projectileType;
 
@@ -107,6 +109,8 @@ public class Player : Character
 
     protected bool isJamming = false;
 
+    protected bool JamReady = false;
+
     protected Vector3 min, max, moveDirection = Vector3.zero;
     protected Vector2 currentRoration;
     protected Quaternion currentRotationQuaternion;
@@ -119,10 +123,18 @@ public class Player : Character
 
     [SerializeField] protected GameObject MyPlayerPanel;
     protected GameObject PlayerPanelDestination;
+    [SerializeField] protected GameObject mainCamera;
+    protected CameraFollow mainCam;
+
+
+    
 
 
     protected override void Start()
-    {                
+    {
+        gameObject.layer = 6;
+        DontDestroyOnLoad(this.gameObject);
+ 
         base.Start();
 
     }
@@ -137,11 +149,17 @@ public class Player : Character
 
       mana1.Initialize(initMana, initMana);
       manabar = mana1.GetComponent<Image>();
-    //    exp1.Initialize(0, Mathf.Floor(100*MyLevel*Mathf.Pow(MyLevel, 0.5f)));
+      
+       exp1.Initialize(0, Mathf.Floor(14));//*MyLevel*Mathf.Pow(MyLevel, 0.5f)));
+       //exp1.MyCurrentValue = 0;
+       exp1bar = exp1.GetComponent<Image>();
      //   levelText.text = MyLevel.ToString();
         base.Start();
         PlayerPanelDestination = GameObject.Find("PlayerPanels");//.GetComponent<GameObject>();
         MyPlayerPanel.transform.parent = PlayerPanelDestination.transform;
+        mainCamera = GameObject.Find("Main Camera");
+        mainCam = mainCamera.GetComponent<CameraFollow>();
+        mainCam.Players.Add(this);
 
 
         
@@ -150,6 +168,7 @@ public class Player : Character
        // controls.Gameplay.Attack.performed += ctx => Attack(NotSureWhyMyAttackFunctionNeedsAnOBjectCalledGOname);
     }
 
+    
     /// <summary>
     /// We are overriding the characters update function, so that we can execute our own functions
     /// </summary>
@@ -172,17 +191,8 @@ public class Player : Character
         //moveDirection = moveDirection * MovementSpd;
         MoveVector = moveDirection;
     Move(moveDirection);
-
-
-           
+     
         base.Update();
-
-      
-        if (Actions.Dash)
-        { //Dash(); }
-        }
-
-
 
         if (Actions.Walk.X != 0 || Actions.Walk.Y != 0)
         {
@@ -194,25 +204,34 @@ public class Player : Character
         }
        
 
-        
-        if(isJamming == true)
+        if(exp1.MyCurrentValue == exp1.MyMaxValue)
         {
-            manabar.color = new Color32(255,155,0,255);
-            DrainManaPool();
+            JamReady = true;
+            exp1bar.color = new Color32(255,155,0,255);
 
+        }
 
-           if(mana1.MyCurrentValue == 0)
-           {
-               isJamming = false;
-                manabar.color = new Color32(26,75,228,255);
-           }
+        else
+        {
             
         }
+        // if(isJamming == true)
+        // {
+        //     manabar.color = new Color32(255,155,0,255);
+        //     DrainManaPool();
+
+        //    if(mana1.MyCurrentValue == 0)
+        //    {
+        //        isJamming = false;
+        //         manabar.color = new Color32(26,75,228,255);
+        //    }
+            
+        // }
        
-        if(isJamming == false)
-        {
+        // if(isJamming == false)
+        // {
             FillManaPool();
-        }
+        // }
       
 
         
@@ -220,15 +239,12 @@ public class Player : Character
     }
     protected void LateUpdate()
     {
- 
-     if (Frames % 10 == 0) { //If the remainder of the current frame divided by 10 is 0 run the function.
-        mana1.MyCurrentValue += 1;
+        Frames++;
+     if (Frames % 9 == 0) { //If the remainder of the current frame divided by 10 is 0 run the function.
+        //mana1.MyCurrentValue += 1;
         moveDirection = transform.position;}
-
-        
-
-
     }
+
 
     void OnDisable()
     {
@@ -238,13 +254,53 @@ public class Player : Character
         }
     }
 
+    private float dashTimer = 0, dashDuration =1;
+    private bool isDashing = false;
+    protected override void FixedUpdate()
+    {
+        if(Actions.LB.IsPressed)
+        {   
+            
+            MoveVector = Vector3.zero;
+        }
 
+        base.FixedUpdate();
+        
+        
+            if (Actions.Dash && Time.time > dashTimer)
+            {
+                dashTimer = Time.time + dashDuration;
+                Dash();
+
+        isDashing = false;
+            
+            
+        }
+
+        
+    }
     void Dash()
     {
+        {
+            StartCoroutine(DashCoroutine());
+           
+        }
+
 
     }
 
- 
+    private IEnumerator DashCoroutine()
+    {
+        isDashing = true;
+        float startTime = Time.time; // need to remember this to know how long to dash
+        while (Time.time < startTime + 0.4f)
+        {
+            transform.Translate(moveDirection * 10 * Time.deltaTime);
+            // or controller.Move(...), dunno about that script
+            yield return null; // this will make Unity stop here and continue next frame
+        }
+        
+    }
 
     void LChangeItem()
     {
@@ -264,8 +320,8 @@ public class Player : Character
 
     private void FillManaPool()
     {
-         if (Frames % 20 == 0) { //If the remainder of the current frame divided by 20 is 0 run the function.
-        mana1.MyCurrentValue += 1;
+         if (Frames % 60 == 0) { //If the remainder of the current frame divided by 20 is 0 run the function.
+        mana1.MyCurrentValue += manaRefillFactor;
 
         }
     }
@@ -314,16 +370,18 @@ public class Player : Character
 
 
 
-    public void P1(int xp)
+    public void P1(float xp)
     {
     exp1.MyCurrentValue += xp;
 
-    if (exp1.MyCurrentValue >= exp1.MyMaxValue)
-    {
-        StartCoroutine(Ding());
 
-    }}
+   //// if (exp1.MyCurrentValue >= exp1.MyMaxValue)
+  //  {
+   //     StartCoroutine(Ding());
 
+   }//}
+
+ 
     private IEnumerator Ding()
     {
         while (!exp1.IsFull)
@@ -349,7 +407,7 @@ public class Player : Character
 
         IsAttacking = false; //Makes sure that we are not attacking
 
-        MyAnimator.SetBool("attack", IsAttacking); //Stops the attack animation
+        //MyAnimator.SetBool("attack", IsAttacking); //Stops the attack animation
 
         if (attackRoutine != null) //Checks if we have a reference to an co routine
         {

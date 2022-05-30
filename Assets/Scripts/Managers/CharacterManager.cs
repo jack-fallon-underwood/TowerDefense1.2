@@ -15,10 +15,10 @@ public class CharacterManager : MonoBehaviour
 	const int maxPlayers = 4;
 
 	List<Vector3> playerPositions = new List<Vector3>() {
-			new Vector3( -1, 1, -10 ),
-			new Vector3( 1, 1, -10 ),
-			new Vector3( -1, -1, -10 ),
-			new Vector3( 1, -1, -10 ),
+			new Vector3( 162.4121f, -255f, -10 ),
+			new Vector3( 163.4121f, -255f, -10 ),
+			new Vector3( 163.3121f, -256f, -10 ),
+			new Vector3( 162.4121f, -256f, -10 ),
 		};
 
 	List<Player> players = new List<Player>(maxPlayers);
@@ -26,7 +26,11 @@ public class CharacterManager : MonoBehaviour
 	PlayerActions keyboardListener;
 	PlayerActions joystickListener;
 
+	void Awake()
+	{
+		//DontDestroyOnLoad(this.gameObject);
 
+	}
 	void OnEnable()
 	{
 		InputManager.OnDeviceDetached += OnDeviceDetached;

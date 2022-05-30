@@ -28,7 +28,7 @@ public class Reflector : MonoBehaviour
        // Debug.Log(collision);
         if (collision is Projectile)
         {//
-            Debug.Log("Hey");
+
             Projectile p = collision.GetComponentInParent<Projectile>();
             p.MyDirection = Vector2.Reflect(p.MyDirection, myCPVn);
 

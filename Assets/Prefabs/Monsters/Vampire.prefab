@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 533228137547697176}
   - component: {fileID: 8706738588284014969}
   - component: {fileID: 8190278889029479848}
+  - component: {fileID: 4775947883691678029}
   m_Layer: 0
   m_Name: AnimorphRange
   m_TagString: Untagged
@@ -45,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSpeed: 4
+  newHealth: 55
 --- !u!58 &8190278889029479848
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61,6 +63,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
+--- !u!114 &4775947883691678029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199600925211159992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1444548683
+      Data2: 1109785408
+      Data3: 2072186249
+      Data4: 1434027639
+    Path: event:/SoundEffects/Vamp Reveal
+  Event: 
+  PlayEvent: 9
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8209293152490067243
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +395,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191a6d35c48ae1b419183fe4d3b62e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  DamageEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 2
   magicDmg: 5
   attackSpd: 5
@@ -374,9 +419,12 @@ MonoBehaviour:
   mySpriteRenderer2D: {fileID: 0}
   initHealth: 30
   MoveVector: {x: 0, y: 0, z: 0}
+  isInvincable: 0
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 8804492623347331408}
   initAggroRange: 10
+  LastPersonToHitMe: {fileID: 0}
 --- !u!114 &3841644787016648044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,8 +470,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0.1
+  m_Mass: 25
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

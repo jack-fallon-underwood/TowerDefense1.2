@@ -1,5 +1,84 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2733501808284827527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4183804760540306805}
+  - component: {fileID: 1075483174977727522}
+  - component: {fileID: 1935947967950144560}
+  m_Layer: 9
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4183804760540306805
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2733501808284827527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5901286044897168140}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.7032948, y: 1.3605406}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1075483174977727522
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2733501808284827527}
+  m_CullTransparentMesh: 0
+--- !u!114 &1935947967950144560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2733501808284827527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: dcdddddddddd
 --- !u!1 &5979658018764362806
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +207,7 @@ GameObject:
   - component: {fileID: 6029130626590273512}
   - component: {fileID: 5930668369088750552}
   - component: {fileID: 2208469173276874890}
+  - component: {fileID: 7314006613192729675}
   m_Layer: 9
   m_Name: SeaMonster
   m_TagString: Enemy
@@ -215,7 +295,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f807a95e9ac3ffa48a7583df364b00b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 700
+  DamageEvent:
+    Guid:
+      Data1: 290280358
+      Data2: 1080907204
+      Data3: -346948213
+      Data4: -555869281
+    Path: event:/SoundEffects/Fish Yell
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 1
   magicDmg: 5
   attackSpd: 5
@@ -224,8 +317,9 @@ MonoBehaviour:
   health: {fileID: 6008309754447140860}
   level: 5
   mySpriteRenderer2D: {fileID: 0}
-  initHealth: 500
+  initHealth: 250
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 5897916658820869302}
   initAggroRange: 20
@@ -286,9 +380,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0.1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -309,6 +403,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ObjectPooler: {fileID: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &7314006613192729675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979675665119041490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 290280358
+      Data2: 1080907204
+      Data3: -346948213
+      Data4: -555869281
+    Path: event:/SoundEffects/Fish Yell
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5979701215481565368
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +462,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4183804760540306805}
   m_Father: {fileID: 5901711154889795126}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -397,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8202103e2e66a9d44a39542415e30ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statValue: {fileID: 0}
+  statValue: {fileID: 1935947967950144560}
   lerpSpeed: 1
 --- !u!1 &5979888521068615068
 GameObject:

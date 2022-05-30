@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 623201715888734436}
   - component: {fileID: 7451362066938777024}
   - component: {fileID: 8730778879233656926}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,8 @@ GameObject:
   - component: {fileID: 9053633232757422847}
   - component: {fileID: 8953937112560056015}
   - component: {fileID: 3506402141737291165}
-  m_Layer: 9
+  - component: {fileID: -7577027067971273779}
+  m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -328,17 +329,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f807a95e9ac3ffa48a7583df364b00b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  DamageEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  HealEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   physicalDmg: 1
   magicDmg: 5
   attackSpd: 5
-  movementSpd: 0.5
+  movementSpd: 2
   hitBox: {fileID: 9005471619085648115}
   health: {fileID: 9038439454966809323}
   level: 5
   mySpriteRenderer2D: {fileID: 0}
-  initHealth: 25
+  initHealth: 50
   MoveVector: {x: 0, y: 0, z: 0}
+  IsFreezing: 0
   MyGameManager: {fileID: 0}
   healthGroup: {fileID: 9211737947162442145}
   initAggroRange: 20
@@ -399,8 +414,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0.1
+  m_Mass: 25
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -422,6 +437,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ObjectPooler: {fileID: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-7577027067971273779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003578002324177605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1325072276
+      Data2: 1208707312
+      Data3: 313781951
+      Data4: 1630860885
+    Path: event:/SoundEffects/ZombieMoan3
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &9003595475957186849
 GameObject:
   m_ObjectHideFlags: 0
